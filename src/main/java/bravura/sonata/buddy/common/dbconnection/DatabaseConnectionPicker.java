@@ -6,21 +6,21 @@ import java.awt.LayoutManager;
 
 public class DatabaseConnectionPicker extends JPanel {
 
-    private JComboBox connections;
+    private JComboBox connectionDropdown;
+    private DatabaseConnections connections;
 
-    public DatabaseConnectionPicker() {
+    public DatabaseConnectionPicker(DatabaseConnections connections) {
+        this.connections = connections;
+
         LayoutManager layout = new BoxLayout(this, BoxLayout.X_AXIS);
         setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
 
-        ComboBoxModel<DatabaseConnection> connectionModel = new DefaultComboBoxModel<DatabaseConnection>(loadDatabaseConnections());
-        connections = new JComboBox(connectionModel);
-        add(connections, BorderLayout.EAST);
+        ComboBoxModel<DatabaseConnection> connectionModel = new DefaultComboBoxModel<DatabaseConnection>(connections.all());
+        connectionDropdown = new JComboBox(connectionModel);
+        add(connectionDropdown, BorderLayout.EAST);
 
         JButton addConnection = new JButton("New...");
         add(addConnection);
     }
 
-    private DatabaseConnection[] loadDatabaseConnections() {
-        return new DatabaseConnectionDAOImpl().getDatabaseConnections();
-    }
 }

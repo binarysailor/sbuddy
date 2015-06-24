@@ -23,7 +23,6 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="code-type-viewer" />
-        <module name="sonata-buddy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

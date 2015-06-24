@@ -7,7 +7,7 @@ public class QuietPeriod<T> extends Thread {
     private volatile boolean threadRunning = true;
     private volatile boolean quietPeriodRunning;
     private long quietPeriodDuration;
-    private long currentDelayStartTime;
+    private volatile long currentDelayStartTime;
     private QuietPeriodListener listener;
     private T token;
 
@@ -24,7 +24,8 @@ public class QuietPeriod<T> extends Thread {
             } catch (InterruptedException e) {
                 quietPeriodRunning = false;
             }
-            if (quietPeriodRunning && currentDelay() >= quietPeriodDuration) {
+            long currentDelay = currentDelay();
+            if (quietPeriodRunning && currentDelay >= quietPeriodDuration) {
                 quietPeriodFinished();
             }
         }
