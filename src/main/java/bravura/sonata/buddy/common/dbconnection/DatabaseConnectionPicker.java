@@ -15,6 +15,9 @@ public class DatabaseConnectionPicker extends JPanel {
         LayoutManager layout = new BoxLayout(this, BoxLayout.X_AXIS);
         setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
 
+        JLabel label = new JLabel("Database connection:");
+        add(label);
+
         ComboBoxModel<DatabaseConnection> connectionModel = new DefaultComboBoxModel<DatabaseConnection>(connections.all());
         connectionDropdown = new JComboBox(connectionModel);
         add(connectionDropdown, BorderLayout.EAST);

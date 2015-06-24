@@ -33,6 +33,7 @@ public class MainWindow extends JFrame {
         contentPane.add(upperPanel, BorderLayout.NORTH);
 
         tabs = new JTabbedPane();
+
         contentPane.add(tabs, BorderLayout.CENTER);
         NavigSearchTab navigSearchTab = appContext.getBean(NavigSearchTab.class);
         tabs.addTab("Navigator Search", navigSearchTab);

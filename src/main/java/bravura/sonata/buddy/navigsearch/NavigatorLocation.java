@@ -13,6 +13,22 @@ public class NavigatorLocation {
     }
 
     public String asPathString() {
-        return path.stream().collect(Collectors.joining(" > "));
+        return path.stream().collect(Collectors.joining("  >  "));
+    }
+
+    public boolean isClassicMenu() {
+        // purely heuristic! to be investigated for a real solution
+        String topLevel = path.getFirst();
+        return !isUpperCase(topLevel);
+    }
+
+    private boolean isUpperCase(String topLevel) {
+        char[] topLevelChars = topLevel.toCharArray();
+        for (char c : topLevelChars) {
+            if (Character.isAlphabetic(c) && !Character.isUpperCase(c)) {
+                return false;
+            }
+        }
+        return true;
     }
 }

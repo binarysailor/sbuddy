@@ -2,14 +2,10 @@ package bravura.sonata.buddy.navigsearch;
 
 import bravura.sonata.buddy.common.dbconnection.DatabaseConnections;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.jdbc.core.RowMapper;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.Collection;
-import java.util.Deque;
-import java.util.LinkedList;
+import java.util.stream.Collectors;
 
 public class NavigatorDAOImpl implements NavigatorDAO {
 
@@ -29,10 +25,15 @@ public class NavigatorDAOImpl implements NavigatorDAO {
                         "from tscm_nav_option opt " +
                         "join tscm_nav_hierarchy h on h.nhry_nav_child_id = opt.nopn_id " +
                         "connect by opt.nopn_id = prior h.nhry_nav_parent_id " +
-                        "start with opt.nopn_name like ?",
-                new Object[]{"%" + optionNameFragment + "%"},
+                        "start with lower(opt.nopn_name) like ?",
+                new Object[]{"%" + optionNameFragment.toLowerCase() + "%"},
                 rowHandler);
 
-        return rowHandler.getNavigatorLocations();
+        return filterLocations(rowHandler.getNavigatorLocations());
+    }
+
+    private Collection<NavigatorLocation> filterLocations(Collection<NavigatorLocation> navigatorLocations) {
+        return navigatorLocations.stream().filter(location -> { return location.isClassicMenu(); })
+                .collect(Collectors.toList());
     }
 }
