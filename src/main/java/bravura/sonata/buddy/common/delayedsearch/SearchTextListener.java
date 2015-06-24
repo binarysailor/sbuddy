@@ -7,13 +7,15 @@ import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class SearchTextListener implements KeyListener, QuietPeriodListener<String> {
+public class SearchTextListener<T> implements KeyListener, QuietPeriodListener<T> {
 
-    private QuietPeriod<String> quietPeriod;
-    private SearchEngine searchEngine;
+    private QuietPeriod<T> quietPeriod;
+    private SearchEngine<T> searchEngine;
+    private SearchCriteriaProducer<T> criteriaProducer;
 
-    public SearchTextListener(SearchEngine searchEngine, long searchDelay) {
+    public SearchTextListener(SearchEngine searchEngine, SearchCriteriaProducer<T> criteriaProducer, long searchDelay) {
         this.searchEngine = searchEngine;
+        this.criteriaProducer = criteriaProducer;
         quietPeriod = new QuietPeriod(this, searchDelay);
         quietPeriod.start();
     }
@@ -28,13 +30,11 @@ public class SearchTextListener implements KeyListener, QuietPeriodListener<Stri
 
     @Override
     public void keyReleased(KeyEvent e) {
-        JTextField searchField = (JTextField)e.getComponent();
-        String query = searchField.getText();
-        quietPeriod.restartQuietPeriod(query);
+        quietPeriod.restartQuietPeriod(criteriaProducer.getSearchCriteria());
     }
 
     @Override
-    public void quietPeriodFinished(String query) {
-        searchEngine.search(query);
+    public void quietPeriodFinished(T searchCriteria) {
+        searchEngine.search(searchCriteria);
     }
 }

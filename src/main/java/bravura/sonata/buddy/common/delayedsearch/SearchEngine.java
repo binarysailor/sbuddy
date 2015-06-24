@@ -4,11 +4,11 @@ import bravura.sonata.buddy.navigsearch.NavigatorSearchResult;
 
 import java.util.Collection;
 
-public interface SearchEngine {
+public interface SearchEngine<T> {
 
     /**
      * Called when the quiet period ends as a command to execute the search.
-     * @param query The query string
+     * @param searchCriteria The query criteria
      */
-    void search(String query);
+    void search(T searchCriteria);
 }

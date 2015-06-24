@@ -1,6 +1,7 @@
 package bravura.sonata.buddy.navigsearch;
 
 import bravura.sonata.buddy.BuddyTabBuilder;
+import bravura.sonata.buddy.common.delayedsearch.SearchCriteriaProducer;
 import bravura.sonata.buddy.common.delayedsearch.SearchEngine;
 import bravura.sonata.buddy.common.delayedsearch.SearchTextListener;
 import bravura.sonata.buddy.config.Preferences;
@@ -17,7 +18,7 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.util.Collection;
 
-public class NavigSearchTab extends JPanel implements SearchEngine {
+public class NavigSearchTab extends JPanel implements SearchEngine<String>, SearchCriteriaProducer<String> {
 
     private JTextField searchField;
     private JTable resultTable;
@@ -49,7 +50,7 @@ public class NavigSearchTab extends JPanel implements SearchEngine {
         searchField = new JTextField(15);
         searchField.setMinimumSize(new Dimension(200, 24));
         searchField.setMaximumSize(new Dimension(200, 24));
-        searchField.addKeyListener(new SearchTextListener(this, preferences.getSearchDelay()));
+        searchField.addKeyListener(new SearchTextListener(this, this, preferences.getSearchDelay()));
         constraints.gridx = 1;
         constraints.weightx = 0.85;
         add(searchField, constraints);
@@ -94,6 +95,11 @@ public class NavigSearchTab extends JPanel implements SearchEngine {
             recentSearchedQuery = navOptionNameFragment;
             displayResults(locations);
         }
+    }
+
+    @Override
+    public String getSearchCriteria() {
+        return searchField.getText();
     }
 
     private void displayResults(final Collection<NavigatorLocation> locations) {

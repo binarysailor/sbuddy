@@ -10,6 +10,11 @@
           factory-method="getInstance" />
 
     <!-- UI -->
+    <bean id="ui.tabs.codesAndTypes"
+          class="bravura.sonata.buddy.codetypeviewer.CodesAndTypesTab"
+          scope="prototype">
+    </bean>
+
     <bean id="ui.tabs.navigSearch"
           class="bravura.sonata.buddy.navigsearch.NavigSearchTab"
           scope="prototype">

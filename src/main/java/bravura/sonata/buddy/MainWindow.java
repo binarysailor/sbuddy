@@ -1,6 +1,7 @@
 package bravura.sonata.buddy;
 
 
+import bravura.sonata.buddy.codetypeviewer.CodesAndTypesTab;
 import bravura.sonata.buddy.common.dbconnection.DatabaseConnectionPicker;
 import bravura.sonata.buddy.config.Preferences;
 import bravura.sonata.buddy.navigsearch.NavigSearchTab;
@@ -35,6 +36,10 @@ public class MainWindow extends JFrame {
         tabs = new JTabbedPane();
 
         contentPane.add(tabs, BorderLayout.CENTER);
+
+        CodesAndTypesTab codesAndTypesTab = appContext.getBean(CodesAndTypesTab.class);
+        tabs.addTab("Codes & Types", codesAndTypesTab);
+
         NavigSearchTab navigSearchTab = appContext.getBean(NavigSearchTab.class);
         tabs.addTab("Navigator Search", navigSearchTab);
 
