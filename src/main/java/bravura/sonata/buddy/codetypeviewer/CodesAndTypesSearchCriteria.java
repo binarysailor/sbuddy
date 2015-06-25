@@ -6,12 +6,13 @@ import java.util.Optional;
  * Created by tszymanski on 24/06/2015.
  */
 class CodesAndTypesSearchCriteria {
-    private Optional<CodeOrId> codeTypeCriteria = Optional.empty();
-    private Optional<CodeOrId> codeCriteria = Optional.empty();
-    private static final CodeOrId EMPTY_CRITERIA = new CodeOrId();
+    private Optional<CodeIdPair> codeTypeCriteria = Optional.empty();
+    private Optional<CodeIdPair> codeCriteria = Optional.empty();
+    private static final CodeIdPair EMPTY_CRITERIA = new CodeIdPair();
 
-    public boolean isByCodeType() {
-        return codeTypeCriteria.isPresent();
+    public CodesAndTypesSearchCriteria(Optional<CodeIdPair> codeCriteria, Optional<CodeIdPair> codeTypeCriteria) {
+        this.codeCriteria = codeCriteria;
+        this.codeTypeCriteria = codeTypeCriteria;
     }
 
     public String getCodeTypeCode() {
@@ -28,26 +29,5 @@ class CodesAndTypesSearchCriteria {
 
     public Long getCodeId() {
         return codeCriteria.orElse(EMPTY_CRITERIA).getId();
-    }
-
-    private static class CodeOrId {
-        private Long id;
-        private String code;
-
-        public Long getId() {
-            return id;
-        }
-
-        public void setId(Long id) {
-            this.id = id;
-        }
-
-        public String getCode() {
-            return code;
-        }
-
-        public void setCode(String code) {
-            this.code = code;
-        }
     }
 }

@@ -13,6 +13,8 @@
     <bean id="ui.tabs.codesAndTypes"
           class="bravura.sonata.buddy.codetypeviewer.CodesAndTypesTab"
           scope="prototype">
+        <constructor-arg ref="preferences" />
+        <constructor-arg ref="dao.codesAndTypes" />
     </bean>
 
     <bean id="ui.tabs.navigSearch"
@@ -41,6 +43,10 @@
 
     <!-- DAO -->
     <bean id="dao.navigator" class="bravura.sonata.buddy.navigsearch.NavigatorDAOImpl" scope="singleton">
+        <constructor-arg ref="dbConnections" />
+    </bean>
+
+    <bean id="dao.codesAndTypes" class="bravura.sonata.buddy.codetypeviewer.CodesAndTypesDAOImpl" scope="singleton">
         <constructor-arg ref="dbConnections" />
     </bean>
 </beans>

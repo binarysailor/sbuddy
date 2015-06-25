@@ -1,15 +1,18 @@
 package bravura.sonata.buddy.codetypeviewer;
 
+import bravura.sonata.buddy.common.delayedsearch.SearchCriteriaProducer;
+import bravura.sonata.buddy.common.delayedsearch.SearchEngine;
+import bravura.sonata.buddy.common.delayedsearch.SearchTextListener;
+import bravura.sonata.buddy.config.Preferences;
+import org.springframework.util.StringUtils;
+
 import javax.swing.*;
 import javax.swing.text.AbstractDocument;
 import javax.swing.text.DocumentFilter;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.util.Optional;
 
 /**
  * Created by tszymanski on 24/06/2015.
@@ -24,7 +27,20 @@ class CodeOrIdPanel extends JPanel {
     private JRadioButton idRadio;
     private JTextField idTextField;
 
-    CodeOrIdPanel(String title) {
+    private SearchEngine<CodesAndTypesSearchCriteria> searchEngine;
+    private SearchCriteriaProducer<CodesAndTypesSearchCriteria> criteriaProducer;
+    private Preferences preferences;
+
+    CodeOrIdPanel(
+            String title,
+            Preferences preferences,
+            SearchEngine<CodesAndTypesSearchCriteria> searchEngine,
+            SearchCriteriaProducer<CodesAndTypesSearchCriteria> criteriaProducer) {
+
+        this.searchEngine = searchEngine;
+        this.criteriaProducer = criteriaProducer;
+        this.preferences = preferences;
+
         setBorder(BorderFactory.createTitledBorder(title));
         setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
@@ -62,6 +78,17 @@ class CodeOrIdPanel extends JPanel {
         group.add(idRadio);
     }
 
+    Optional<CodeIdPair> createCodeIdPair() {
+        CodeIdPair pair = new CodeIdPair();
+        if (codeRadio.isSelected() && !StringUtils.isEmpty(codeTextField.getText())) {
+            pair.setCode(codeTextField.getText());
+        }
+        if (idRadio.isSelected() && !StringUtils.isEmpty(idTextField.getText())) {
+            pair.setId(Long.valueOf(idTextField.getText()));
+        }
+        return pair.asOptional();
+    }
+
     private JTextField createCodeTextField() {
         return createTextFieldWithFilter(CODE_FILTER);
     }
@@ -75,6 +102,8 @@ class CodeOrIdPanel extends JPanel {
         textField.setPreferredSize(new Dimension(80, 24));
         AbstractDocument doc = (AbstractDocument) textField.getDocument();
         doc.setDocumentFilter(filter);
+        textField.addKeyListener(new SearchTextListener<>(
+                searchEngine, criteriaProducer, preferences.getSearchDelay()));
         return textField;
     }
 }

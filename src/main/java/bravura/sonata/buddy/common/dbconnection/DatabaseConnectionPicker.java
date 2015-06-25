@@ -3,6 +3,8 @@ package bravura.sonata.buddy.common.dbconnection;
 import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.LayoutManager;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 
 public class DatabaseConnectionPicker extends JPanel {
 
@@ -20,6 +22,12 @@ public class DatabaseConnectionPicker extends JPanel {
 
         ComboBoxModel<DatabaseConnection> connectionModel = new DefaultComboBoxModel<DatabaseConnection>(connections.all());
         connectionDropdown = new JComboBox(connectionModel);
+        connectionDropdown.addItemListener(e -> {
+            if (e.getStateChange() == ItemEvent.SELECTED) {
+                DatabaseConnection selectedConnection = (DatabaseConnection) e.getItem();
+                connections.setCurrent(selectedConnection);
+            }
+        });
         add(connectionDropdown, BorderLayout.EAST);
 
         JButton addConnection = new JButton("New...");

@@ -7,10 +7,9 @@ import org.springframework.jdbc.core.RowMapper;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-public class NavigatorDAOImpl implements NavigatorDAO {
+class NavigatorDAOImpl implements NavigatorDAO {
 
     private DatabaseConnections connections;
-    private RowMapper<NavigatorLocation> navigatorLocationRowMapper;
 
     NavigatorDAOImpl(DatabaseConnections connections) {
         this.connections = connections;
