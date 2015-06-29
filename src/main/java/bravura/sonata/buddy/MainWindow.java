@@ -22,9 +22,9 @@ public class MainWindow extends JFrame {
 
 
         super("Sonata BuddyLauncher");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        Preferences.set().searchDelay(1 * 1000 * 1000 * 1000);
+        Preferences.set().searchDelay(500 * 1000 * 1000);
 
         Container contentPane = getContentPane();
 

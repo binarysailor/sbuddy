@@ -12,6 +12,8 @@ import javax.swing.text.DocumentFilter;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.util.Optional;
 
 /**
@@ -46,7 +48,7 @@ class CodeOrIdPanel extends JPanel {
         GridBagConstraints constraints = new GridBagConstraints();
         constraints.anchor = GridBagConstraints.LINE_START;
 
-        codeRadio = new JRadioButton("Code");
+        codeRadio = createRadioButton("Code");
         constraints.gridx = 0;
         constraints.gridy = 0;
         constraints.weightx = 0.3;
@@ -57,15 +59,15 @@ class CodeOrIdPanel extends JPanel {
         constraints.weightx = 0.7;
         add(codeTextField, constraints);
 
-        idRadio = new JRadioButton("Id");
+        idRadio = createRadioButton("Id");
         constraints.gridx = 0;
         constraints.gridy = 1;
-        constraints.weightx = 0.3;
+        constraints.weightx = 0.2;
         add(idRadio, constraints);
 
         idTextField = createIdTextField();
         constraints.gridx = 1;
-        constraints.weightx = 0.7;
+        constraints.weightx = 0.8;
         add(idTextField, constraints);
 
         ButtonGroup group = new ButtonGroup();
@@ -89,19 +91,30 @@ class CodeOrIdPanel extends JPanel {
         return pair.asOptional();
     }
 
+    private JRadioButton createRadioButton(String title) {
+        JRadioButton radio = new JRadioButton(title);
+        return radio;
+    }
+
     private JTextField createCodeTextField() {
-        return createTextFieldWithFilter(CODE_FILTER);
+        return createTextFieldWithFilter(CODE_FILTER, codeRadio);
     }
 
     private JTextField createIdTextField() {
-        return  createTextFieldWithFilter(ID_FILTER);
+        return  createTextFieldWithFilter(ID_FILTER, idRadio);
     }
 
-    private JTextField createTextFieldWithFilter(DocumentFilter filter) {
+    private JTextField createTextFieldWithFilter(DocumentFilter filter, JRadioButton relatedRadio) {
         JTextField textField = new JTextField();
         textField.setPreferredSize(new Dimension(80, 24));
         AbstractDocument doc = (AbstractDocument) textField.getDocument();
         doc.setDocumentFilter(filter);
+        textField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                relatedRadio.setSelected(true);
+            }
+        });
         textField.addKeyListener(new SearchTextListener<>(
                 searchEngine, criteriaProducer, preferences.getSearchDelay()));
         return textField;

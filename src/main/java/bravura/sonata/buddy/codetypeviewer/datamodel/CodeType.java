@@ -1,5 +1,6 @@
 package bravura.sonata.buddy.codetypeviewer.datamodel;
 
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -31,7 +32,21 @@ public class CodeType {
         return description;
     }
 
-    public Iterable<Code> getCodes() {
+    public Collection<Code> getCodes() {
         return codes;
+    }
+
+    public Code getSelectedCode() {
+        return selectedCode;
+    }
+
+    public void selectCode(Code toBeSelected) {
+        for (Code code : codes) {
+            if (code.equals(toBeSelected)) {
+                selectedCode = code;
+                return;
+            }
+        }
+        throw new IllegalArgumentException("The code to be selected is unknown");
     }
 }
