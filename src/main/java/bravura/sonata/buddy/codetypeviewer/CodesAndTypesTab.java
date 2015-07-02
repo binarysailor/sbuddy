@@ -5,6 +5,8 @@ import bravura.sonata.buddy.codetypeviewer.datamodel.Code;
 import bravura.sonata.buddy.codetypeviewer.datamodel.CodeType;
 import bravura.sonata.buddy.common.delayedsearch.SearchCriteriaProducer;
 import bravura.sonata.buddy.common.delayedsearch.SearchEngine;
+import bravura.sonata.buddy.common.progress.ComponentInsertion;
+import bravura.sonata.buddy.common.progress.ProgressIndicator;
 import bravura.sonata.buddy.config.Preferences;
 
 import javax.swing.*;
@@ -18,6 +20,7 @@ public class CodesAndTypesTab extends JPanel
         implements SearchEngine<CodesAndTypesSearchCriteria>, SearchCriteriaProducer<CodesAndTypesSearchCriteria> {
 
     private static final long serialVersionUID = 1L;
+
     private CodeOrIdPanel codeTypePanel;
     private CodeOrIdPanel codePanel;
     private JTable codeTypesTable;
@@ -26,7 +29,8 @@ public class CodesAndTypesTab extends JPanel
     private DefaultTableModel codesModel;
     private CodesAndTypesDAO codesAndTypesDAO;
 
-    List<CodeType> searchResults;
+    private ProgressIndicator indicator;
+    private List<CodeType> searchResults;
 
     public CodesAndTypesTab(Preferences preferences, CodesAndTypesDAO dao) {
         this.codesAndTypesDAO = dao;
@@ -52,7 +56,7 @@ public class CodesAndTypesTab extends JPanel
                 "Id", "Code", "Description"
         }, 0);
         constraints.gridx = 0;
-        constraints.gridy = 1;
+        constraints.gridy = 2;
         constraints.gridwidth = 2;
         constraints.weighty = 0.3;
         constraints.fill = GridBagConstraints.BOTH;
@@ -61,19 +65,29 @@ public class CodesAndTypesTab extends JPanel
             selectCodeTypeRow(codeTypesTable.getSelectedRow())
         );
         //codeTypesTable.setBorder(BorderFactory.createTitledBorder("Code Types"));
-        JScrollPane scrollPane = new JScrollPane(codeTypesTable);
-        add(scrollPane, constraints);
+        JScrollPane codeTypesScrollPane = new JScrollPane(codeTypesTable);
+        add(codeTypesScrollPane, constraints);
 
         codesModel = new DefaultTableModel(new Object[] {
               "Id", "Code", "Description", "Short Description", "Tags"
         }, 0);
-        constraints.gridy = 2;
+        constraints.gridy = 3;
         constraints.gridwidth = 2;
         constraints.weighty = 0.7;
         codesTable = new JTable(codesModel);
         //codesTable.setBorder(BorderFactory.createTitledBorder("Codes"));
-        scrollPane = new JScrollPane(codesTable);
-        add(scrollPane, constraints);
+        JScrollPane codesScrollPane = new JScrollPane(codesTable);
+        add(codesScrollPane, constraints);
+
+        GridBagConstraints c = new GridBagConstraints();
+        c.gridx = 0;
+        c.gridy = 1;
+        c.gridwidth = 2;
+        c.fill = GridBagConstraints.HORIZONTAL;
+        c.weighty = 1.0;
+        ComponentInsertion progressBarInsertion = new ComponentInsertion(this, c);
+        ComponentInsertion noResultsInsertion = new ComponentInsertion(this, c);
+        indicator = new ProgressIndicator(progressBarInsertion, noResultsInsertion, new JComponent[] {codeTypesScrollPane, codesScrollPane});
     }
 
     private void groupRadioButtons() {
@@ -84,6 +98,8 @@ public class CodesAndTypesTab extends JPanel
 
     @Override
     public void search(CodesAndTypesSearchCriteria criteria) {
+        indicator.startSearch();
+
         if (criteria.getCodeCode() != null) {
             searchResults = codesAndTypesDAO.findByCodeCode(criteria.getCodeCode());
         } else if (criteria.getCodeId() != null) {
@@ -104,20 +120,25 @@ public class CodesAndTypesTab extends JPanel
     }
 
     private void updateResults() {
-        int selectedRow = -1;
-        codeTypesModel.setRowCount(0);
-        int i = 0;
-        for (CodeType codeType : searchResults) {
-            codeTypesModel.addRow(new Object[] {
-                    codeType.getId(), codeType.getCode(), codeType.getDescription()
-            });
-            if (selectedRow < 0 || codeType.getSelectedCode() != null) {
-                selectedRow = i;
+        if (searchResults.isEmpty()) {
+            indicator.endSearchWithNoResults();
+        } else {
+            indicator.endSearchWithResults();
+            int selectedRow = -1;
+            codeTypesModel.setRowCount(0);
+            int i = 0;
+            for (CodeType codeType : searchResults) {
+                codeTypesModel.addRow(new Object[]{
+                        codeType.getId(), codeType.getCode(), codeType.getDescription()
+                });
+                if (selectedRow < 0 || codeType.getSelectedCode() != null) {
+                    selectedRow = i;
+                }
+                i++;
             }
-            i++;
-        }
 
-        selectCodeTypeRow(selectedRow);
+            selectCodeTypeRow(selectedRow);
+        }
     }
 
     private void selectCodeTypeRow(int codeTypeRowIndex) {
