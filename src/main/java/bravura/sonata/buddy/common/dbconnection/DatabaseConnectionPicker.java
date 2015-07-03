@@ -8,8 +8,8 @@ import java.awt.event.ItemListener;
 
 public class DatabaseConnectionPicker extends JPanel {
 
-    private JComboBox connectionDropdown;
-    private DatabaseConnections connections;
+    private final JComboBox connectionDropdown;
+    private final DatabaseConnections connections;
 
     public DatabaseConnectionPicker(DatabaseConnections connections) {
         this.connections = connections;

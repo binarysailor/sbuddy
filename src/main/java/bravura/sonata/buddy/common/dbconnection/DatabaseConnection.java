@@ -7,10 +7,10 @@ import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
 
 public class DatabaseConnection {
-    private String name;
-    private String url;
-    private String user;
-    private String password;
+    private final String name;
+    private final String url;
+    private final String user;
+    private final String password;
     private ComboPooledDataSource dataSource;
 
     public DatabaseConnection(String name, String url, String user, String password) {

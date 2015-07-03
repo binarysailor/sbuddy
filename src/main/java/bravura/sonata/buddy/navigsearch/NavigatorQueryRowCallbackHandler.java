@@ -12,7 +12,7 @@ import java.util.LinkedList;
  * Created by tszymanski on 23/06/2015.
  */
 class NavigatorQueryRowCallbackHandler implements RowCallbackHandler {
-    private Deque<NavigatorLocation> locations = new LinkedList<>();
+    private final Deque<NavigatorLocation> locations = new LinkedList<>();
     private boolean addNewLocation = true;
 
     @Override

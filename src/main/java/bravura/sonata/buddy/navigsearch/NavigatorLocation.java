@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class NavigatorLocation {
-    private Deque<String> path = new LinkedList<>(); // starts with top level option, ends with the searched option
+    private final Deque<String> path = new LinkedList<>(); // starts with top level option, ends with the searched option
 
     public void addParentOption(String optionName) {
         path.addFirst(optionName);

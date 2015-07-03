@@ -14,7 +14,7 @@ import java.util.List;
  * Created by tszymanski on 25/06/2015.
  */
 class CodeTypeRowCallbackHandler implements RowCallbackHandler {
-    private List<CodeType> codeTypes = new LinkedList<>();
+    private final List<CodeType> codeTypes = new LinkedList<>();
 
     private long currentCodeTypeId;
     private String currentCodeTypeCode;

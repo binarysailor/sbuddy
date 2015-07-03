@@ -6,9 +6,10 @@ import java.util.Optional;
  * Created by tszymanski on 24/06/2015.
  */
 class CodesAndTypesSearchCriteria {
+    private static final CodeIdPair EMPTY_CRITERIA = new CodeIdPair();
+
     private Optional<CodeIdPair> codeTypeCriteria = Optional.empty();
     private Optional<CodeIdPair> codeCriteria = Optional.empty();
-    private static final CodeIdPair EMPTY_CRITERIA = new CodeIdPair();
 
     public CodesAndTypesSearchCriteria(Optional<CodeIdPair> codeCriteria, Optional<CodeIdPair> codeTypeCriteria) {
         this.codeCriteria = codeCriteria;

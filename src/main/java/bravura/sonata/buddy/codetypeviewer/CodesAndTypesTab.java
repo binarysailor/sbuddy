@@ -64,7 +64,7 @@ public class CodesAndTypesTab extends JPanel
         codeTypesTable.getSelectionModel().addListSelectionListener(e ->
             selectCodeTypeRow(codeTypesTable.getSelectedRow())
         );
-        //codeTypesTable.setBorder(BorderFactory.createTitledBorder("Code Types"));
+
         JScrollPane codeTypesScrollPane = new JScrollPane(codeTypesTable);
         add(codeTypesScrollPane, constraints);
 
@@ -75,7 +75,7 @@ public class CodesAndTypesTab extends JPanel
         constraints.gridwidth = 2;
         constraints.weighty = 0.7;
         codesTable = new JTable(codesModel);
-        //codesTable.setBorder(BorderFactory.createTitledBorder("Codes"));
+
         JScrollPane codesScrollPane = new JScrollPane(codesTable);
         add(codesScrollPane, constraints);
 
@@ -87,13 +87,10 @@ public class CodesAndTypesTab extends JPanel
         c.weighty = 1.0;
         ComponentInsertion progressBarInsertion = new ComponentInsertion(this, c);
         ComponentInsertion noResultsInsertion = new ComponentInsertion(this, c);
-        indicator = new ProgressIndicator(progressBarInsertion, noResultsInsertion, new JComponent[] {codeTypesScrollPane, codesScrollPane});
-    }
-
-    private void groupRadioButtons() {
-        ButtonGroup group = new ButtonGroup();
-        codeTypePanel.addRadioButtonsToGroup(group);
-        codePanel.addRadioButtonsToGroup(group);
+        indicator = new ProgressIndicator(
+                progressBarInsertion, noResultsInsertion,
+                new JComponent[] {codeTypesScrollPane, codesScrollPane}
+        );
     }
 
     @Override
@@ -119,55 +116,69 @@ public class CodesAndTypesTab extends JPanel
                 codePanel.createCodeIdPair(), codeTypePanel.createCodeIdPair());
     }
 
+    private void groupRadioButtons() {
+        ButtonGroup group = new ButtonGroup();
+        codeTypePanel.addRadioButtonsToGroup(group);
+        codePanel.addRadioButtonsToGroup(group);
+    }
+
     private void updateResults() {
         if (searchResults.isEmpty()) {
             indicator.endSearchWithNoResults();
         } else {
             indicator.endSearchWithResults();
-            int selectedRow = -1;
-            codeTypesModel.setRowCount(0);
-            int i = 0;
-            for (CodeType codeType : searchResults) {
-                codeTypesModel.addRow(new Object[]{
-                        codeType.getId(), codeType.getCode(), codeType.getDescription()
-                });
-                if (selectedRow < 0 || codeType.getSelectedCode() != null) {
-                    selectedRow = i;
-                }
-                i++;
-            }
-
-            selectCodeTypeRow(selectedRow);
+            int selectedCodeTypeIndex = repopulateCodeTypesTable();
+            selectCodeTypeRow(selectedCodeTypeIndex);
         }
+    }
+
+    private int repopulateCodeTypesTable() {
+        int selectedRow = -1;
+        codeTypesModel.setRowCount(0);
+        int i = 0;
+        for (CodeType codeType : searchResults) {
+            codeTypesModel.addRow(new Object[]{
+                    codeType.getId(), codeType.getCode(), codeType.getDescription()
+            });
+            if (selectedRow < 0 || codeType.getSelectedCode() != null) {
+                selectedRow = i;
+            }
+            i++;
+        }
+        return selectedRow;
     }
 
     private void selectCodeTypeRow(int codeTypeRowIndex) {
         if (codeTypeRowIndex >= 0) {
             codeTypesTable.setRowSelectionInterval(codeTypeRowIndex, codeTypeRowIndex);
-
-            int selectedCodeIndex = -1;
-            codesModel.setRowCount(0);
-            int i = 0;
-            CodeType selectedCodeType = searchResults.get(codeTypeRowIndex);
-            for (Code code : selectedCodeType.getCodes()) {
-                codesModel.addRow(new Object[]{
-                        code.getId(), code.getCode(), code.getDescription(),
-                        code.getShortDescription(), code.getTags()
-                });
-                if (code == selectedCodeType.getSelectedCode()) {
-                    selectedCodeIndex = i;
-                }
-                i++;
-            }
-            if (selectedCodeIndex >= 0) {
-                selectCodeRow(selectedCodeIndex);
-            }
+            int selectedCodeIndex = repopulateCodesTable(codeTypeRowIndex);
+            selectCodeRow(selectedCodeIndex);
         } else {
             codesModel.setRowCount(0);
         }
     }
 
+    private int repopulateCodesTable(int codeTypeRowIndex) {
+        int selectedCodeIndex = -1;
+        codesModel.setRowCount(0);
+        int i = 0;
+        CodeType selectedCodeType = searchResults.get(codeTypeRowIndex);
+        for (Code code : selectedCodeType.getCodes()) {
+            codesModel.addRow(new Object[]{
+                    code.getId(), code.getCode(), code.getDescription(),
+                    code.getShortDescription(), code.getTags()
+            });
+            if (code == selectedCodeType.getSelectedCode()) {
+                selectedCodeIndex = i;
+            }
+            i++;
+        }
+        return selectedCodeIndex;
+    }
+
     private void selectCodeRow(int selectedCodeIndex) {
-        codesTable.setRowSelectionInterval(selectedCodeIndex, selectedCodeIndex);
+        if (selectedCodeIndex >= 0) {
+            codesTable.setRowSelectionInterval(selectedCodeIndex, selectedCodeIndex);
+        }
     }
 }

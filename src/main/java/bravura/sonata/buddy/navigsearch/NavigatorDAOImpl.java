@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 class NavigatorDAOImpl implements NavigatorDAO {
 
-    private DatabaseConnections connections;
+    private final DatabaseConnections connections;
 
     NavigatorDAOImpl(DatabaseConnections connections) {
         this.connections = connections;

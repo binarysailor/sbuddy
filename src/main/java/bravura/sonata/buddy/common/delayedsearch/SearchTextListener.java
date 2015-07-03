@@ -9,9 +9,9 @@ import java.awt.event.KeyListener;
 
 public class SearchTextListener<T> implements KeyListener, QuietPeriodListener<T> {
 
-    private QuietPeriod<T> quietPeriod;
-    private SearchEngine<T> searchEngine;
-    private SearchCriteriaProducer<T> criteriaProducer;
+    private final QuietPeriod<T> quietPeriod;
+    private final SearchEngine<T> searchEngine;
+    private final SearchCriteriaProducer<T> criteriaProducer;
 
     public SearchTextListener(SearchEngine searchEngine, SearchCriteriaProducer<T> criteriaProducer, long searchDelay) {
         this.searchEngine = searchEngine;

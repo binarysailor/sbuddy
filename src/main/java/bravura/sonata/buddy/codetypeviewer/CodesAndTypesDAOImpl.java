@@ -15,13 +15,14 @@ import java.util.function.Predicate;
 class CodesAndTypesDAOImpl implements CodesAndTypesDAO {
 
     private static final String SELECT_FROM =
-            "select cdty_id, cdty_code, cdty_description, code_id, code_code, code_description, code_short_description, code_tags " +
-            "from tscm_code_type join tscm_code on cdty_id = code_code_type_id ";
+            "select cdty_id, cdty_code, cdty_description, code_id, code_code, " +
+                    "code_description, code_short_description, code_tags " +
+                    "from tscm_code_type join tscm_code on cdty_id = code_code_type_id ";
 
     private static final String ORDER_BY =
             "order by cdty_code, code_sort_order, code_code";
 
-    private DatabaseConnections connections;
+    private final DatabaseConnections connections;
 
     CodesAndTypesDAOImpl(DatabaseConnections connections) {
         this.connections = connections;

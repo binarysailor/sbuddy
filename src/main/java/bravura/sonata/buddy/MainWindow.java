@@ -16,11 +16,9 @@ public class MainWindow extends JFrame {
 
     private static final long serialVersionUID = 1L;
 
-    private JTabbedPane tabs;
+    private final JTabbedPane tabs;
 
     MainWindow(ApplicationContext appContext) {
-
-
         super("Sonata BuddyLauncher");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 

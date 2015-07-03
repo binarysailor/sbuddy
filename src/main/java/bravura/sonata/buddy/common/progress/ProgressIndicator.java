@@ -10,11 +10,11 @@ public class ProgressIndicator {
 
     private static final long FAKE_SEARCH_DELAY_MS = 100;
 
-    private JComponent[] componentsToHide;
-    private ComponentInsertion progressBarInsertion;
-    private ComponentInsertion noResultsInsertion;
-    private JProgressBar progressBar;
-    private JLabel noResults;
+    private final JComponent[] componentsToHide;
+    private final ComponentInsertion progressBarInsertion;
+    private final ComponentInsertion noResultsInsertion;
+    private final JProgressBar progressBar;
+    private final JLabel noResults;
 
     public ProgressIndicator(ComponentInsertion progressBarInsertion, ComponentInsertion noResultsInsertion, JComponent[] componentsToHide) {
         this.componentsToHide = componentsToHide;

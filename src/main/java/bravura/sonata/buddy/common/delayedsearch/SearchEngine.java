@@ -1,9 +1,5 @@
 package bravura.sonata.buddy.common.delayedsearch;
 
-import bravura.sonata.buddy.navigsearch.NavigatorSearchResult;
-
-import java.util.Collection;
-
 public interface SearchEngine<T> {
 
     /**

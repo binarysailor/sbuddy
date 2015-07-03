@@ -6,8 +6,8 @@ import javax.swing.*;
  * Created by tszymanski on 29/06/2015.
  */
 public class ComponentInsertion {
-    private JComponent parent;
-    private Object constraints;
+    private final JComponent parent;
+    private final Object constraints;
 
     private JComponent insertedComponent;
 

@@ -24,14 +24,14 @@ class CodeOrIdPanel extends JPanel {
     private static final DocumentFilter CODE_FILTER = new CodeDocumentFilter();
     private static final DocumentFilter ID_FILTER = new IdDocumentFilter();
 
-    private JRadioButton codeRadio;
-    private JTextField codeTextField;
-    private JRadioButton idRadio;
-    private JTextField idTextField;
+    private final JRadioButton codeRadio;
+    private final JTextField codeTextField;
+    private final JRadioButton idRadio;
+    private final JTextField idTextField;
 
-    private SearchEngine<CodesAndTypesSearchCriteria> searchEngine;
-    private SearchCriteriaProducer<CodesAndTypesSearchCriteria> criteriaProducer;
-    private Preferences preferences;
+    private final SearchEngine<CodesAndTypesSearchCriteria> searchEngine;
+    private final SearchCriteriaProducer<CodesAndTypesSearchCriteria> criteriaProducer;
+    private final Preferences preferences;
 
     CodeOrIdPanel(
             String title,

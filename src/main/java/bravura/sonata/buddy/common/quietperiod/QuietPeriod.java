@@ -6,9 +6,9 @@ public class QuietPeriod<T> extends Thread {
 
     private volatile boolean threadRunning = true;
     private volatile boolean quietPeriodRunning;
-    private long quietPeriodDuration;
+    private final long quietPeriodDuration;
     private volatile long currentDelayStartTime;
-    private QuietPeriodListener listener;
+    private final QuietPeriodListener listener;
     private T token;
 
     public QuietPeriod(QuietPeriodListener<T> listener, long quietPeriodDuration) {
