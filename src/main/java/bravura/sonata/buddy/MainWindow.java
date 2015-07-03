@@ -3,6 +3,7 @@ package bravura.sonata.buddy;
 
 import bravura.sonata.buddy.codetypeviewer.CodesAndTypesTab;
 import bravura.sonata.buddy.common.dbconnection.DatabaseConnectionPicker;
+import bravura.sonata.buddy.common.dbconnection.DatabaseConnections;
 import bravura.sonata.buddy.config.Preferences;
 import bravura.sonata.buddy.navigsearch.NavigSearchTab;
 import org.springframework.context.ApplicationContext;
@@ -10,6 +11,8 @@ import org.springframework.context.ApplicationContext;
 import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.Container;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 
 public class MainWindow extends JFrame {
@@ -42,5 +45,21 @@ public class MainWindow extends JFrame {
         tabs.addTab("Navigator Search", navigSearchTab);
 
         pack();
+
+        DatabaseConnections dbConnections = appContext.getBean(DatabaseConnections.class);
+        addWindowListener(new ConnectionClosingWindowListener(dbConnections));
+    }
+
+    private static class ConnectionClosingWindowListener extends WindowAdapter {
+        private final DatabaseConnections connections;
+
+        public ConnectionClosingWindowListener(DatabaseConnections connections) {
+            this.connections = connections;
+        }
+
+        @Override
+        public void windowClosing(WindowEvent e) {
+            connections.closeAll();
+        }
     }
 }

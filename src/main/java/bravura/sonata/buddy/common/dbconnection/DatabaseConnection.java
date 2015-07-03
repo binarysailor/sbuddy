@@ -1,10 +1,10 @@
 package bravura.sonata.buddy.common.dbconnection;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
-import org.springframework.dao.DataAccessException;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
+import java.util.logging.Logger;
 
 public class DatabaseConnection {
     private final String name;
@@ -45,12 +45,15 @@ public class DatabaseConnection {
 
     public synchronized void closeDataSource() {
         if (dataSource != null) {
+            Logger.getLogger(getClass().getName()).info(
+                    "Closing database connection: " + dataSource.getJdbcUrl());
             dataSource.close();
             dataSource = null;
         }
     }
 
     private void createDataSource() {
+        Logger.getLogger(getClass().getName()).info("Creating a database connection: " + url);
         ComboPooledDataSource ds = new ComboPooledDataSource();
         try {
             ds.setDriverClass("oracle.jdbc.OracleDriver");

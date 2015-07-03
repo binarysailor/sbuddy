@@ -44,4 +44,10 @@ public class DatabaseConnections {
     private DatabaseConnection[] loadDatabaseConnections() {
         return new DatabaseConnectionDAOImpl().getDatabaseConnections();
     }
+
+    public void closeAll() {
+        for (DatabaseConnection connection : connections) {
+            connection.closeDataSource();
+        }
+    }
 }
