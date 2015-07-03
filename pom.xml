@@ -5,10 +5,8 @@
   <groupId>bravura</groupId>
   <artifactId>sonata-buddy</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>sdcopy</module>
-  </modules>
-  <packaging>pom</packaging>
+
+  <packaging>jar</packaging>
 
   <name>sonata-buddy</name>
   <url>http://maven.apache.org</url>
@@ -21,12 +19,40 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
+              <mainClass>bravura.sonata.buddy.BuddyLauncher</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <descriptors>
+            <descriptor>src/assembly/zip.xml</descriptor>
+          </descriptors>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
@@ -60,5 +86,4 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
 </project>
