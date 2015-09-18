@@ -1,0 +1,13 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.bravurasolutions.com/sonatabuddy/preferences"
+           xmlns:tns="http://www.bravurasolutions.com/sonatabuddy/preferences"
+    elementFormDefault="qualified">
+    <xs:element name="preferences" type="tns:Preferences">
+    </xs:element>
+
+    <xs:complexType name="Preferences">
+        <xs:sequence>
+            <xs:element name="search-delay" type="xs:unsignedInt" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

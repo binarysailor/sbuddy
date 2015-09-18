@@ -1,0 +1,14 @@
+<database-connections xmlns="http://www.bravurasolutions.com/sonatabuddy/database-connections">
+    <database-connection>
+        <name>Kaedwen 4.7</name>
+        <url>jdbc:oracle:thin:@//localhost:1522/oracle12c</url>
+        <user>kaedwen47112</user>
+        <password>password</password>
+    </database-connection>
+    <database-connection>
+        <name>Base 5 - Core</name>
+        <url>jdbc:oracle:thin:@//mohua:1512/Mohua12c</url>
+        <user>base_trunk_core</user>
+        <password>password</password>
+    </database-connection>
+</database-connections>

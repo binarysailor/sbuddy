@@ -1,0 +1,22 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.bravurasolutions.com/sonatabuddy/database-connections"
+           xmlns:tns="http://www.bravurasolutions.com/sonatabuddy/database-connections"
+           elementFormDefault="qualified">
+    <xs:element name="database-connections" type="tns:DatabaseConnections">
+    </xs:element>
+
+    <xs:complexType name="DatabaseConnections">
+        <xs:sequence>
+            <xs:element name="database-connection" type="tns:DatabaseConnection" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DatabaseConnection">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="url" type="xs:string" />
+            <xs:element name="user" type="xs:string" />
+            <xs:element name="password" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

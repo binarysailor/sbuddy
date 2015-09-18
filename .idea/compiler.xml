@@ -23,12 +23,17 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="code-type-viewer" />
-        <module name="sonata-buddy" />
+        <module name="codetypeviewer" />
+        <module name="navigsearch" />
+        <module name="sonata-buddy-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="code-type-viewer" target="1.8" />
+      <module name="codetypeviewer" target="1.8" />
+      <module name="navigsearch" target="1.8" />
       <module name="sonata-buddy" target="1.8" />
+      <module name="sonata-buddy-core" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

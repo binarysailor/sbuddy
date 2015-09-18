@@ -5,8 +5,13 @@
   <groupId>bravura</groupId>
   <artifactId>sonata-buddy</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>sonata-buddy-core</module>
+    <module>navigsearch</module>
+    <module>codetypeviewer</module>
+  </modules>
 
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>sonata-buddy</name>
   <url>http://maven.apache.org</url>
@@ -23,6 +28,10 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+          <includes>
+            <include>src/main/java/**/*.java</include>
+            <include>src/generated/**/*.java</include>
+          </includes>
         </configuration>
       </plugin>
       <plugin>
@@ -57,27 +66,22 @@
     </plugins>
   </build>
 
+  <repositories>
+    <repository>
+      <id>codehaus-mule-repo</id>
+      <name>codehaus-mule-repo</name>
+      <url>
+        https://repository-master.mulesoft.org/nexus/content/groups/public/
+      </url>
+      <layout>default</layout>
+    </repository>
+  </repositories>
+
   <dependencies>
-    <dependency>
-      <groupId>c3p0</groupId>
-      <artifactId>c3p0</artifactId>
-      <version>0.9.1.2</version>
-    </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
       <version>${springVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-jdbc</artifactId>
-      <version>${springVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.oracle</groupId>
-      <artifactId>ojdbc6</artifactId>
-      <version>12.1.0.1.0</version>
-      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>

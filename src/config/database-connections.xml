@@ -1,0 +1,8 @@
+<database-connections>
+    <database-connection>
+        <name>Kaedwen</name>
+        <url>jdbc:oracle:thin:@//127.0.0.1:1522/oracle12c</url>
+        <user>kaedwen47112</user>
+        <password>password</password>
+    </database-connection>
+</database-connections>

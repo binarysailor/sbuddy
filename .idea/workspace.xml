@@ -2,15 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ab76a95-bb80-4416-ae07-5eca57459d9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assembly/zip.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesModule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/generated/bravura/sonata/buddy/config/xmlconfig/DatabaseConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionConfigException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionDAOImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionManagementDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/generated/bravura/sonata/buddy/config/xmlconfig/DatabaseConnections.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/files/Directory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/files/FileSystemDirectoryImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/navigsearch/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchModule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/generated/bravura/sonata/buddy/config/xmlconfig/ObjectFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/generated/bravura/sonata/buddy/config/xmlconfig/Preferences.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/SonataBuddyModule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/SonataBuddyTab.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/config/xmlconfig/XmlDatabaseConnections.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/config/xmlconfig/XmlPreferences.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/resources/codetypeviewer-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codetypeviewer/codetypeviewer.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/resources/bravura/sonata/buddy/config/database-connections.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/database-connections.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/resources/bravura/sonata/buddy/config/database-connections.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/navigsearch/src/main/resources/navigsearch-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/navigsearch/navigsearch.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/generated/bravura/sonata/buddy/config/xmlconfig/package-info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codetypeviewer/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/navigsearch/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/preferences.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/resources/bravura/sonata/buddy/config/preferences.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sonata-buddy-core/sonata-buddy-core.iml" />
+      <change type="DELETED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\common\dbconnection\DatabaseConnectionDAOImpl.java" afterPath="" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\BuddyLauncher.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/BuddyLauncher.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\BuddyTabBuilder.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/BuddyTabBuilder.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\MainWindow.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/MainWindow.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\codetypeviewer\CodeDocumentFilter.java" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeDocumentFilter.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\codetypeviewer\CodeIdPair.java" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeIdPair.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\codetypeviewer\CodeOrIdPanel.java" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeOrIdPanel.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\codetypeviewer\CodeTypeRowCallbackHandler.java" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeTypeRowCallbackHandler.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\codetypeviewer\CodesAndTypesDAO.java" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesDAO.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\codetypeviewer\CodesAndTypesDAOImpl.java" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesDAOImpl.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\codetypeviewer\CodesAndTypesSearchCriteria.java" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesSearchCriteria.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\codetypeviewer\CodesAndTypesTab.java" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesTab.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\codetypeviewer\IdDocumentFilter.java" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/IdDocumentFilter.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\codetypeviewer\datamodel\Code.java" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/datamodel/Code.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\codetypeviewer\datamodel\CodeType.java" afterPath="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/datamodel/CodeType.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\common\dbconnection\DatabaseConnection.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnection.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\common\dbconnection\DatabaseConnectionPicker.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionPicker.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\common\dbconnection\DatabaseConnections.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnections.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\common\delayedsearch\SearchCriteriaProducer.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/delayedsearch/SearchCriteriaProducer.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\common\delayedsearch\SearchEngine.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/delayedsearch/SearchEngine.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\common\delayedsearch\SearchTextListener.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/delayedsearch/SearchTextListener.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\common\progress\ComponentInsertion.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/progress/ComponentInsertion.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\common\progress\ProgressIndicator.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/progress/ProgressIndicator.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\common\quietperiod\QuietPeriod.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/quietperiod/QuietPeriod.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\common\quietperiod\QuietPeriodListener.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/quietperiod/QuietPeriodListener.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\config\Preferences.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/config/Preferences.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\config\PreferencesSetter.java" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/config/PreferencesSetter.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\navigsearch\NavigSearchTab.java" afterPath="$PROJECT_DIR$/navigsearch/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchTab.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\navigsearch\NavigatorDAO.java" afterPath="$PROJECT_DIR$/navigsearch/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorDAO.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\navigsearch\NavigatorDAOImpl.java" afterPath="$PROJECT_DIR$/navigsearch/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorDAOImpl.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\navigsearch\NavigatorLocation.java" afterPath="$PROJECT_DIR$/navigsearch/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorLocation.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\java\bravura\sonata\buddy\navigsearch\NavigatorQueryRowCallbackHandler.java" afterPath="$PROJECT_DIR$/navigsearch/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorQueryRowCallbackHandler.java" />
+      <change type="MOVED" beforePath="C:\work\sonata-buddy\src\main\resources\appcontext.xml" afterPath="$PROJECT_DIR$/sonata-buddy-core/src/main/resources/appcontext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sonata-buddy.iml" afterPath="$PROJECT_DIR$/sonata-buddy.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assembly/zip.xml" afterPath="$PROJECT_DIR$/src/assembly/zip.xml" />
     </list>
     <ignored path="code-type-viewer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/navigsearch/target/" />
+    <ignored path="$PROJECT_DIR$/sonata-buddy-core/target/" />
+    <ignored path="$PROJECT_DIR$/codetypeviewer/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,103 +97,99 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CodeType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/datamodel/CodeType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuddyLauncher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/BuddyLauncher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/MainWindow.java">
+        <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1435909882150" expanded="true" signature="1878:2193" placeholder="{...}" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseConnections.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnections.java">
+      <file leaf-file-name="codetypeviewer-context.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codetypeviewer/src/main/resources/codetypeviewer-context.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1435909841445" expanded="true" signature="1285:1404" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseConnection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/bravura/AppTest.java">
+      <file leaf-file-name="BuddyLauncher.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/BuddyLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.49317408">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NavigatorDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorDAOImpl.java">
+      <file leaf-file-name="navigsearch-context.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navigsearch/src/main/resources/navigsearch-context.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.208547">
-              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zip.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assembly/zip.xml">
+      <file leaf-file-name="NavigSearchModule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navigsearch/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchModule.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodesAndTypesModule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesModule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SonataBuddyTab.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/SonataBuddyTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SonataBuddyModule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/SonataBuddyModule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appcontext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/resources/appcontext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -151,42 +216,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/config/Configuration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorPath.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/quietperiod/QuietPeriodListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/config/ConfigurationBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/ResultRecipient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/config/ApplicationConfig.java" />
-        <option value="$PROJECT_DIR$/sdcopy/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/BuddyLauncher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/config/PreferencesBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/config/PreferencesSetter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/config/Preferences.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/SearchTextListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/SearchCriteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/delayedsearch/SearchCriteriaProducer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchTab.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeDocumentFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/IdDocumentFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/datamodel/CodesAndTypesDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/datamodel/Code.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/appcontext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeIdPair.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/datamodel/CodeType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/propertychange/PersonUsage.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/propertychange/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesTab.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeOrIdPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeTypeRowCallbackHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesSearchCriteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionPicker.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/delayedsearch/SearchTextListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/progress/ComponentInsertion.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/progress/ProgressIndicator.java" />
@@ -197,11 +232,41 @@
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorSearchResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/delayedsearch/SearchEngine.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/BuddyTabBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/BuddyLauncher.java" />
+        <option value="$PROJECT_DIR$/src/config/preferences.xml" />
+        <option value="$PROJECT_DIR$/src/assembly/zip.xml" />
+        <option value="$PROJECT_DIR$/src/bindings/preferences.xjb" />
+        <option value="$PROJECT_DIR$/src/main/resources/bravura/sonata/buddy/config/database-connections.xsd" />
+        <option value="$PROJECT_DIR$/src/main/resources/bravura/sonata/buddy/config/preferences.xsd" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/config/Preferences.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/config/xmlconfig/XmlPreferences.java" />
+        <option value="$PROJECT_DIR$/src/config/database-connections.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/bravura/sonata/buddy/config/database-connections.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/files/Directory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionConfigException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/appcontext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/files/FileSystemDirectoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/config/xmlconfig/XmlDatabaseConnections.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnections.java" />
         <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/MainWindow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnection.java" />
-        <option value="$PROJECT_DIR$/src/assembly/zip.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionPicker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionManagementDialog.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/codetypeviewer/pom.xml" />
+        <option value="$PROJECT_DIR$/sonata-buddy-core/pom.xml" />
+        <option value="$PROJECT_DIR$/navigsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/config/xmlconfig/XmlDatabaseConnections.java" />
+        <option value="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/SonataBuddyTab.java" />
+        <option value="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/SonataBuddyModule.java" />
+        <option value="$PROJECT_DIR$/navigsearch/src/main/resources/navigsearch-context.xml" />
+        <option value="$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesModule.java" />
+        <option value="$PROJECT_DIR$/navigsearch/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchModule.java" />
+        <option value="$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/MainWindow.java" />
+        <option value="$PROJECT_DIR$/sonata-buddy-core/src/main/resources/appcontext.xml" />
+        <option value="$PROJECT_DIR$/codetypeviewer/src/main/resources/codetypeviewer-context.xml" />
       </list>
     </option>
   </component>
@@ -275,7 +340,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -287,146 +352,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bravura" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bravura" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata.buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bravura" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata.buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="navigsearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bravura" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata.buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bravura" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata.buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quietperiod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bravura" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata.buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -455,80 +380,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-buddy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assembly" />
+              <option name="myItemId" value="codetypeviewer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-buddy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-buddy-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-buddy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-buddy-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bravura.sonata.buddy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-buddy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-buddy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-buddy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="sonata-buddy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="sonata-buddy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="xml.catalog" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -558,15 +490,25 @@
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bravura.sonata.buddy.codetypeviewer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\sonata-buddy\codetypeviewer\src\main\resources" />
+      <recent name="C:\work\sonata-buddy\sonata-buddy-core\src\generated\bravura\sonata\buddy\config\xmlconfig" />
+      <recent name="C:\work\sonata-buddy\sonata-buddy-core\src\main\resources\bravura\sonata\buddy\config" />
+      <recent name="C:\work\sonata-buddy\sonata-buddy-core\src\main\resources" />
+      <recent name="C:\work\sonata-buddy\codetypeviewer\src\main\java\bravura\sonata\buddy" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="bravura.sonata.buddy.codetypeviewer" />
       <recent name="bravura.sonata.buddy.navigsearch" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="bravura.sonata.buddy.codetypeviewer" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\sonata-buddy\codetypeviewer\src\main\java\bravura" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.Package">
+  <component name="RunManager" selected="Application.SonataBuddy">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -696,13 +638,13 @@
       <option name="MAIN_CLASS_NAME" value="bravura.sonata.buddy.BuddyLauncher" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/sonata-buddy-core" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sonata-buddy" />
+      <module name="sonata-buddy-core" />
       <envs />
       <method />
     </configuration>
@@ -792,26 +734,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771537" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42602995" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958803" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42602995" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20677084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958803" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958803" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988764" sideWeight="0.49270833" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42509362" sideWeight="0.51979166" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39981273" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958803" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771537" sideWeight="0.4875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42509362" sideWeight="0.48020834" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -819,28 +761,28 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295964" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295964" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -864,15 +806,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchTab.java</url>
-          <line>93</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -881,377 +815,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeOrIdPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="53" selection-start-line="94" selection-start-column="53" selection-end-line="94" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/delayedsearch/SearchTextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/quietperiod/QuietPeriodListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/BuddyTabBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_25/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33249685">
-          <caret line="742" column="16" selection-start-line="742" selection-start-column="16" selection-end-line="742" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_25/jre/lib/ext/sunec.jar!/source_tips">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.0.6.RELEASE/spring-beans-4.0.6.RELEASE.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3482143">
-          <caret line="317" column="0" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/config/PreferencesSetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_25/jre/lib/rt.jar!/sun/reflect/NativeConstructorAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.04">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.0.6.RELEASE/spring-jdbc-4.0.6.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3469388">
-          <caret line="551" column="0" selection-start-line="551" selection-start-column="0" selection-end-line="551" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_25/src.zip!/javax/swing/ButtonGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/delayedsearch/SearchCriteriaProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/appcontext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeOrIdPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeIdPair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeDocumentFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodeTypeRowCallbackHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/IdDocumentFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesSearchCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnectionPicker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/delayedsearch/SearchTextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/progress/ComponentInsertion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/progress/ProgressIndicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/quietperiod/QuietPeriod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/config/Preferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorLocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/delayedsearch/SearchEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24709302">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/quietperiod/QuietPeriodListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.049418606">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorQueryRowCallbackHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/BuddyTabBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/datamodel/Code.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/codetypeviewer/datamodel/CodeType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1435909882150" expanded="true" signature="1878:2193" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1435909841445" expanded="true" signature="1285:1404" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bravura/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1259,31 +826,207 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assembly/zip.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2905983">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/preferences.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bravura/sonata/buddy/BuddyLauncher.java">
+    <entry file="file://$PROJECT_DIR$/src/config/database-connections.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_25/src.zip!/java/awt/Dialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53583616">
+          <caret line="1020" column="35" selection-start-line="1020" selection-start-column="35" selection-end-line="1020" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigsearch/src/main/java/bravura/sonata/buddy/navigsearch/NavigatorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/common/dbconnection/DatabaseConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codetypeviewer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/config/xmlconfig/XmlPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.208547">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="35" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonata-buddy-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigsearch/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigsearch/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/config/xmlconfig/XmlDatabaseConnections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/SonataBuddyTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/SonataBuddyModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigsearch/src/main/resources/navigsearch-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigsearch/src/main/java/bravura/sonata/buddy/navigsearch/NavigSearchModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codetypeviewer/src/main/java/bravura/sonata/buddy/codetypeviewer/CodesAndTypesModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/resources/appcontext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codetypeviewer/src/main/resources/codetypeviewer-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonata-buddy-core/src/main/java/bravura/sonata/buddy/BuddyLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49317408">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/codetypeviewer/codetypeviewer.iml" filepath="$PROJECT_DIR$/codetypeviewer/codetypeviewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/navigsearch/navigsearch.iml" filepath="$PROJECT_DIR$/navigsearch/navigsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/sonata-buddy.iml" filepath="$PROJECT_DIR$/sonata-buddy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sonata-buddy-core/sonata-buddy-core.iml" filepath="$PROJECT_DIR$/sonata-buddy-core/sonata-buddy-core.iml" />
     </modules>
   </component>
 </project>

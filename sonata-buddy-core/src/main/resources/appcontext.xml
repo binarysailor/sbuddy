@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="codetypeviewer-context.xml" />
+    <import resource="navigsearch-context.xml" />
+
+    <!-- File access -->
+    <bean id="directory" scope="singleton"
+          class="bravura.sonata.buddy.files.FileSystemDirectoryImpl">
+        <constructor-arg value="#{systemProperties['user.home']}/sonata-buddy"/>
+    </bean>
+
+    <!-- Preferences -->
+    <bean id="preferences" scope="singleton"
+          class="bravura.sonata.buddy.config.Preferences"
+          factory-method="getInstance"/>
+
+    <!-- UI -->
+    <bean id="ui.controls.dbConnectionPicker"
+          class="bravura.sonata.buddy.common.dbconnection.DatabaseConnectionPicker"
+          scope="prototype">
+        <constructor-arg ref="dbConnections"/>
+    </bean>
+
+    <!-- Database connections -->
+    <bean id="dbConnections"
+          class="bravura.sonata.buddy.common.dbconnection.DatabaseConnections"
+          scope="singleton"
+          init-method="initialize">
+        <constructor-arg ref="dbConnectionDAO"/>
+    </bean>
+
+    <bean id="dbConnectionDAO"
+          class="bravura.sonata.buddy.common.dbconnection.DatabaseConnectionDAOImpl"
+          scope="singleton">
+        <constructor-arg ref="directory"/>
+    </bean>
+
+    <bean id="datasource"
+          scope="prototype"
+          factory-bean="dbConnections"
+          factory-method="getCurrentConnectionDatasource"/>
+
+    <!-- DAO -->
+    <bean id="dao.navigator" class="bravura.sonata.buddy.navigsearch.NavigatorDAOImpl" scope="singleton">
+        <constructor-arg ref="dbConnections"/>
+    </bean>
+
+    <bean id="dao.codesAndTypes" class="bravura.sonata.buddy.codetypeviewer.CodesAndTypesDAOImpl" scope="singleton">
+        <constructor-arg ref="dbConnections"/>
+    </bean>
+</beans>

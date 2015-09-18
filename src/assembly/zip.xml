@@ -14,6 +14,10 @@
                 <include>*.jar</include>
             </includes>
         </fileSet>
+        <fileSet>
+            <directory>src/config</directory>
+            <outputDirectory>config</outputDirectory>
+        </fileSet>
     </fileSets>
     <dependencySets>
         <dependencySet>
