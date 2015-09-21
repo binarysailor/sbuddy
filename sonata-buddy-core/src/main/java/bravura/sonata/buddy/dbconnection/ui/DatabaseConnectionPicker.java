@@ -1,12 +1,14 @@
-package bravura.sonata.buddy.common.dbconnection;
+package bravura.sonata.buddy.dbconnection.ui;
+
+import bravura.sonata.buddy.dbconnection.DatabaseConnection;
+import bravura.sonata.buddy.dbconnection.DatabaseConnections;
+import bravura.sonata.buddy.ui.WindowPosition;
 
 import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Frame;
 import java.awt.LayoutManager;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 
 public class DatabaseConnectionPicker extends JPanel {
@@ -33,13 +35,14 @@ public class DatabaseConnectionPicker extends JPanel {
         });
         add(connectionDropdown, BorderLayout.EAST);
 
-        JButton addConnection = new JButton("New...");
-        final Frame frame = findFrame();
-        addConnection.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new JDialog(frame, "Manage database connections", true).setVisible(true);
-            }
+        JButton addConnection = new JButton("Manage...");
+        addConnection.addActionListener(e ->  {
+            SwingUtilities.invokeLater(() -> {
+                Frame frame = findFrame();
+                DatabaseConnectionManagementDialog databaseConnectionManagementDialog = new DatabaseConnectionManagementDialog(frame, connections);
+                WindowPosition.centerRelativeTo(databaseConnectionManagementDialog, frame);
+                databaseConnectionManagementDialog.setVisible(true);
+            });
         });
         add(addConnection);
     }
@@ -55,5 +58,4 @@ public class DatabaseConnectionPicker extends JPanel {
             return null;
         }
     }
-
 }

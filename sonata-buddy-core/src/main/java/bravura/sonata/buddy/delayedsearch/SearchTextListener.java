@@ -1,9 +1,8 @@
-package bravura.sonata.buddy.common.delayedsearch;
+package bravura.sonata.buddy.delayedsearch;
 
-import bravura.sonata.buddy.common.quietperiod.QuietPeriod;
-import bravura.sonata.buddy.common.quietperiod.QuietPeriodListener;
+import bravura.sonata.buddy.quietperiod.QuietPeriod;
+import bravura.sonata.buddy.quietperiod.QuietPeriodListener;
 
-import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 

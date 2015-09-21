@@ -1,18 +1,14 @@
 package bravura.sonata.buddy.navigsearch;
 
-import bravura.sonata.buddy.BuddyTabBuilder;
-import bravura.sonata.buddy.common.delayedsearch.SearchCriteriaProducer;
-import bravura.sonata.buddy.common.delayedsearch.SearchEngine;
-import bravura.sonata.buddy.common.delayedsearch.SearchTextListener;
 import bravura.sonata.buddy.config.Preferences;
+import bravura.sonata.buddy.delayedsearch.SearchCriteriaProducer;
+import bravura.sonata.buddy.delayedsearch.SearchEngine;
+import bravura.sonata.buddy.delayedsearch.SearchTextListener;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
 
 import javax.swing.*;
-import javax.swing.border.BevelBorder;
-import javax.swing.border.Border;
 import javax.swing.table.DefaultTableModel;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -32,7 +28,6 @@ public class NavigSearchTab extends JPanel implements SearchEngine<String>, Sear
     public NavigSearchTab(Preferences preferences, NavigatorDAO navigatorDAO) {
         this.navigatorDAO = navigatorDAO;
 
-        new BuddyTabBuilder().setupTab(this);
         setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
 

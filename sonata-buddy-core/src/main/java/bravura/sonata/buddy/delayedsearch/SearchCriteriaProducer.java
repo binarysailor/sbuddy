@@ -1,6 +1,4 @@
-package bravura.sonata.buddy.common.delayedsearch;
-
-import java.awt.Event;
+package bravura.sonata.buddy.delayedsearch;
 
 /**
  * Created by tszymanski on 24/06/2015.

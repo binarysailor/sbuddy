@@ -1,4 +1,4 @@
-package bravura.sonata.buddy.common.delayedsearch;
+package bravura.sonata.buddy.delayedsearch;
 
 public interface SearchEngine<T> {
 

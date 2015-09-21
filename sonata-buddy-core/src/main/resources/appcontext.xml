@@ -20,21 +20,21 @@
 
     <!-- UI -->
     <bean id="ui.controls.dbConnectionPicker"
-          class="bravura.sonata.buddy.common.dbconnection.DatabaseConnectionPicker"
+          class="bravura.sonata.buddy.dbconnection.ui.DatabaseConnectionPicker"
           scope="prototype">
         <constructor-arg ref="dbConnections"/>
     </bean>
 
     <!-- Database connections -->
     <bean id="dbConnections"
-          class="bravura.sonata.buddy.common.dbconnection.DatabaseConnections"
+          class="bravura.sonata.buddy.dbconnection.DatabaseConnections"
           scope="singleton"
           init-method="initialize">
         <constructor-arg ref="dbConnectionDAO"/>
     </bean>
 
     <bean id="dbConnectionDAO"
-          class="bravura.sonata.buddy.common.dbconnection.DatabaseConnectionDAOImpl"
+          class="bravura.sonata.buddy.dbconnection.dao.DatabaseConnectionDAOImpl"
           scope="singleton">
         <constructor-arg ref="directory"/>
     </bean>

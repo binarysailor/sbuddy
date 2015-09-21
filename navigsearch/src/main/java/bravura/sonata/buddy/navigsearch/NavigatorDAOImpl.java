@@ -1,8 +1,7 @@
 package bravura.sonata.buddy.navigsearch;
 
-import bravura.sonata.buddy.common.dbconnection.DatabaseConnections;
+import bravura.sonata.buddy.dbconnection.DatabaseConnections;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 
 import java.util.Collection;
 import java.util.stream.Collectors;

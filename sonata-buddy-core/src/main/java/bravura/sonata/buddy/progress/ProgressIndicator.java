@@ -1,4 +1,4 @@
-package bravura.sonata.buddy.common.progress;
+package bravura.sonata.buddy.progress;
 
 import javax.swing.*;
 import java.awt.Dimension;

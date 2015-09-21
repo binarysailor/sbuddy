@@ -1,0 +1,1854 @@
+Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T22:58:10+02:00)
+Maven home: c:\applications\apache-maven-3.2.3
+Java version: 1.7.0_71, vendor: Oracle Corporation
+Java home: c:\Java\jdk1.7.0_71\jre
+Default locale: pl_PL, platform encoding: Cp1250
+OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from c:\applications\apache-maven-3.2.3\conf\settings.xml
+[DEBUG] Reading user settings from C:\Users\tszymanski\.m2\settings.xml
+[DEBUG] Using local repository at d:\maven-repo
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for d:\maven-repo
+[INFO] Scanning for projects...
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central2 (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-mule-repo (https://repository-master.mulesoft.org/nexus/content/groups/public/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central2 (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-mule-repo (https://repository-master.mulesoft.org/nexus/content/groups/public/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central2 (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-mule-repo (https://repository-master.mulesoft.org/nexus/content/groups/public/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central2 (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-mule-repo (https://repository-master.mulesoft.org/nexus/content/groups/public/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central2 (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-mule-repo (https://repository-master.mulesoft.org/nexus/content/groups/public/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central2 (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-mule-repo (https://repository-master.mulesoft.org/nexus/content/groups/public/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central2 (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-mule-repo (https://repository-master.mulesoft.org/nexus/content/groups/public/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central2 (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-mule-repo (https://repository-master.mulesoft.org/nexus/content/groups/public/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Extension realms for project bravura:sonata-buddy:pom:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project bravura:sonata-buddy-core:jar:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project bravura:navigsearch:jar:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project bravura:codetypeviewer:jar:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for bravura:sonata-buddy-core:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ bravura:sonata-buddy-core:[unknown-version], C:\work\sonata-buddy\sonata-buddy-core\pom.xml, line 17, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ bravura:sonata-buddy-core:[unknown-version], C:\work\sonata-buddy\sonata-buddy-core\pom.xml, line 28, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: bravura:sonata-buddy-core:jar:1.0-SNAPSHOT
+[DEBUG] Tasks:   [compile]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sonata-buddy-core 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-snapshots (http://nexus.codehaus.org/snapshots/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-snapshots (http://nexus.codehaus.org/snapshots/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       bravura:sonata-buddy-core:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile]
+[DEBUG] Repositories (dependencies): [repo (http://covcdbuci01/artifactory/repo, releases+snapshots)]
+[DEBUG] Repositories (plugins)     : [repo (http://covcdbuci01/artifactory/repo, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.codehaus.mojo:jaxb2-maven-plugin:2.1:xjc (generate-db-connections)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addGeneratedAnnotation default-value="false">true</addGeneratedAnnotation>
+  <arguments>${xjc.arguments}</arguments>
+  <clearOutputDir default-value="true">false</clearOutputDir>
+  <enableIntrospection default-value="false"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <execution default-value="${mojoExecution}"/>
+  <extension default-value="false"/>
+  <failOnNoSchemas default-value="true"/>
+  <generateEpisode default-value="true"/>
+  <laxSchemaValidation default-value="false"/>
+  <noGeneratedHeaderComments default-value="false"/>
+  <noPackageLevelAnnotations default-value="false"/>
+  <outputDirectory default-value="${project.build.directory}/generated-sources/jaxb">src/generated</outputDirectory>
+  <packageName>bravura.sonata.buddy.dbconnection.dao</packageName>
+  <project default-value="${project}"/>
+  <quiet default-value="false"/>
+  <readOnly default-value="false"/>
+  <settings default-value="${settings}"/>
+  <skipXjc default-value="false">${xjc.skip}</skipXjc>
+  <sourceType default-value="XmlSchema"/>
+  <sources>
+    <source>src/main/resources/bravura/sonata/buddy/config/database-connections.xsd</source>
+  </sources>
+  <staleFileDirectory default-value="${project.build.directory}/jaxb2"/>
+  <verbose default-value="false">${xjc.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.codehaus.mojo:jaxb2-maven-plugin:2.1:xjc (generate-preferences)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addGeneratedAnnotation default-value="false">true</addGeneratedAnnotation>
+  <arguments>${xjc.arguments}</arguments>
+  <clearOutputDir default-value="true">false</clearOutputDir>
+  <enableIntrospection default-value="false"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <execution default-value="${mojoExecution}"/>
+  <extension default-value="false"/>
+  <failOnNoSchemas default-value="true"/>
+  <generateEpisode default-value="true"/>
+  <laxSchemaValidation default-value="false"/>
+  <noGeneratedHeaderComments default-value="false"/>
+  <noPackageLevelAnnotations default-value="false"/>
+  <outputDirectory default-value="${project.build.directory}/generated-sources/jaxb">src/generated</outputDirectory>
+  <packageName>bravura.sonata.buddy.config.xmlconfig</packageName>
+  <project default-value="${project}"/>
+  <quiet default-value="false"/>
+  <readOnly default-value="false"/>
+  <settings default-value="${settings}"/>
+  <skipXjc default-value="false">${xjc.skip}</skipXjc>
+  <sourceType default-value="XmlSchema"/>
+  <sources>
+    <source>src/main/resources/bravura/sonata/buddy/config/preferences.xsd</source>
+  </sources>
+  <staleFileDirectory default-value="${project.build.directory}/jaxb2"/>
+  <verbose default-value="false">${xjc.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <includes>
+    <include>src/main/java/**/*.java</include>
+    <include>src/generated/**/*.java</include>
+  </includes>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">1.8</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">1.8</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=21, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=1, ConflictIdSorter.conflictIdCount=12, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4, ConflictResolver.conflictItemCount=20, DefaultDependencyCollector.collectTime=90, DefaultDependencyCollector.transformTime=8}
+[DEBUG] bravura:sonata-buddy-core:jar:1.0-SNAPSHOT
+[DEBUG]    c3p0:c3p0:jar:0.9.1.2:compile
+[DEBUG]    com.oracle:ojdbc6:jar:12.1.0.1.0:runtime
+[DEBUG]    org.springframework:spring-jdbc:jar:4.0.6.RELEASE:compile
+[DEBUG]       org.springframework:spring-beans:jar:4.0.6.RELEASE:compile
+[DEBUG]       org.springframework:spring-core:jar:4.0.6.RELEASE:compile
+[DEBUG]          commons-logging:commons-logging:jar:1.1.3:compile
+[DEBUG]       org.springframework:spring-tx:jar:4.0.6.RELEASE:compile
+[DEBUG]    org.springframework:spring-context:jar:4.0.6.RELEASE:compile
+[DEBUG]       org.springframework:spring-aop:jar:4.0.6.RELEASE:compile
+[DEBUG]          aopalliance:aopalliance:jar:1.0:compile
+[DEBUG]       org.springframework:spring-expression:jar:4.0.6.RELEASE:compile
+[DEBUG]    junit:junit:jar:3.8.1:test
+[INFO] 
+[INFO] --- jaxb2-maven-plugin:2.1:xjc (generate-db-connections) @ sonata-buddy-core ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-snapshots (http://nexus.codehaus.org/snapshots/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-snapshots (http://nexus.codehaus.org/snapshots/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-snapshots (http://nexus.codehaus.org/snapshots/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-snapshots (https://maven.java.net/content/repositories/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-snapshots (https://maven.java.net/content/repositories/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-snapshots (https://maven.java.net/content/repositories/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-snapshots (https://maven.java.net/content/repositories/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-snapshots (https://maven.java.net/content/repositories/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-snapshots (https://maven.java.net/content/repositories/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for sonatype-nexus-snapshots (http://oss.sonatype.org/content/repositories/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for sonatype-nexus-snapshots (http://oss.sonatype.org/content/repositories/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for releases.java.net (https://maven.java.net/content/repositories/releases/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for jvnet-nexus-staging (https://maven.java.net/content/repositories/staging/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-snapshots (http://nexus.codehaus.org/snapshots/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-snapshots (http://nexus.codehaus.org/snapshots/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus-snapshots (http://nexus.codehaus.org/snapshots/).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=89, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=44, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9, ConflictResolver.conflictItemCount=88, DefaultDependencyCollector.collectTime=381, DefaultDependencyCollector.transformTime=10}
+[DEBUG] org.codehaus.mojo:jaxb2-maven-plugin:jar:2.1:
+[DEBUG]    javax.xml.bind:jaxb-api:jar:2.2.11:compile
+[DEBUG]    org.glassfish.jaxb:jaxb-core:jar:2.2.11:compile
+[DEBUG]       org.glassfish.jaxb:txw2:jar:2.2.11:compile
+[DEBUG]       com.sun.istack:istack-commons-runtime:jar:2.21:compile
+[DEBUG]    org.glassfish.jaxb:jaxb-runtime:jar:2.2.11:compile
+[DEBUG]       org.jvnet.staxex:stax-ex:jar:1.7.6:compile
+[DEBUG]       com.sun.xml.fastinfoset:FastInfoset:jar:1.2.13:compile
+[DEBUG]    org.glassfish.jaxb:jaxb-xjc:jar:2.2.11:compile
+[DEBUG]       com.sun.xsom:xsom:jar:20140925:compile
+[DEBUG]          relaxngDatatype:relaxngDatatype:jar:20020414:compile
+[DEBUG]       org.glassfish.jaxb:codemodel:jar:2.2.11:compile
+[DEBUG]       com.sun.xml.bind.external:rngom:jar:2.2.11:compile
+[DEBUG]       com.sun.xml.dtd-parser:dtd-parser:jar:1.1:compile
+[DEBUG]       com.sun.istack:istack-commons-tools:jar:2.21:compile
+[DEBUG]          org.apache.ant:ant:jar:1.7.0:compile
+[DEBUG]             org.apache.ant:ant-launcher:jar:1.7.0:compile
+[DEBUG]    org.glassfish.jaxb:jaxb-jxc:jar:2.2.11:compile
+[DEBUG]       com.sun:tools:jar:1.6:system
+[DEBUG]    com.thoughtworks.qdox:qdox:jar:2.0-M3:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.21:compile
+[DEBUG]    org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG] Created new class realm plugin>org.codehaus.mojo:jaxb2-maven-plugin:2.1
+[DEBUG] Importing foreign packages into class realm plugin>org.codehaus.mojo:jaxb2-maven-plugin:2.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.codehaus.mojo:jaxb2-maven-plugin:2.1
+[DEBUG]   Included: org.codehaus.mojo:jaxb2-maven-plugin:jar:2.1
+[DEBUG]   Included: javax.xml.bind:jaxb-api:jar:2.2.11
+[DEBUG]   Included: org.glassfish.jaxb:jaxb-core:jar:2.2.11
+[DEBUG]   Included: org.glassfish.jaxb:txw2:jar:2.2.11
+[DEBUG]   Included: com.sun.istack:istack-commons-runtime:jar:2.21
+[DEBUG]   Included: org.glassfish.jaxb:jaxb-runtime:jar:2.2.11
+[DEBUG]   Included: org.jvnet.staxex:stax-ex:jar:1.7.6
+[DEBUG]   Included: com.sun.xml.fastinfoset:FastInfoset:jar:1.2.13
+[DEBUG]   Included: org.glassfish.jaxb:jaxb-xjc:jar:2.2.11
+[DEBUG]   Included: com.sun.xsom:xsom:jar:20140925
+[DEBUG]   Included: relaxngDatatype:relaxngDatatype:jar:20020414
+[DEBUG]   Included: org.glassfish.jaxb:codemodel:jar:2.2.11
+[DEBUG]   Included: com.sun.xml.bind.external:rngom:jar:2.2.11
+[DEBUG]   Included: com.sun.xml.dtd-parser:dtd-parser:jar:1.1
+[DEBUG]   Included: com.sun.istack:istack-commons-tools:jar:2.21
+[DEBUG]   Included: org.apache.ant:ant:jar:1.7.0
+[DEBUG]   Included: org.apache.ant:ant-launcher:jar:1.7.0
+[DEBUG]   Included: org.glassfish.jaxb:jaxb-jxc:jar:2.2.11
+[DEBUG]   Included: com.sun:tools:jar:1.6
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0-M3
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.21
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0
+[DEBUG]   Excluded: org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.7
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.3
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0
+[DEBUG] Configuring mojo org.codehaus.mojo:jaxb2-maven-plugin:2.1:xjc from plugin realm ClassRealm[plugin>org.codehaus.mojo:jaxb2-maven-plugin:2.1, parent: sun.misc.Launcher$AppClassLoader@6f2192a9]
+[DEBUG] Configuring mojo 'org.codehaus.mojo:jaxb2-maven-plugin:2.1:xjc' with basic configurator -->
+[DEBUG]   (f) addGeneratedAnnotation = true
+[DEBUG]   (f) arguments = []
+[DEBUG]   (f) clearOutputDir = false
+[DEBUG]   (f) enableIntrospection = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) execution = org.codehaus.mojo:jaxb2-maven-plugin:2.1:xjc {execution: generate-db-connections}
+[DEBUG]   (f) extension = false
+[DEBUG]   (f) failOnNoSchemas = true
+[DEBUG]   (f) generateEpisode = true
+[DEBUG]   (f) laxSchemaValidation = false
+[DEBUG]   (f) noGeneratedHeaderComments = false
+[DEBUG]   (f) noPackageLevelAnnotations = false
+[DEBUG]   (f) outputDirectory = C:\work\sonata-buddy\sonata-buddy-core\src\generated
+[DEBUG]   (f) packageName = bravura.sonata.buddy.dbconnection.dao
+[DEBUG]   (f) project = MavenProject: bravura:sonata-buddy-core:1.0-SNAPSHOT @ C:\work\sonata-buddy\sonata-buddy-core\pom.xml
+[DEBUG]   (f) quiet = false
+[DEBUG]   (f) readOnly = false
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5213fce3
+[DEBUG]   (f) skipXjc = false
+[DEBUG]   (f) sourceType = XmlSchema
+[DEBUG]   (f) sources = [src/main/resources/bravura/sonata/buddy/config/database-connections.xsd]
+[DEBUG]   (f) staleFileDirectory = C:\work\sonata-buddy\sonata-buddy-core\target\jaxb2
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] 
++=================== [Brief Plugin Build Dependency Information]
+|
+| Note: These dependencies pertain to what was used to build *the plugin*.
+|       Check project dependencies to see the ones used in *your build*.
+|
+|
+| Plugin's own information
+|     GroupId    : org.codehaus.mojo
+|     ArtifactID : jaxb2-maven-plugin
+|     Version    : 2.1
+|     Buildtime  : Sat May 02 14:02:35 CEST 2015
+|
+| Plugin's JAXB-related dependencies
+|
+|   1) [jaxb-api]
+|     GroupId    : javax.xml.bind
+|     ArtifactID : jaxb-api
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   2) [codemodel]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : codemodel
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   3) [jaxb-core]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : jaxb-core
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   4) [jaxb-jxc]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : jaxb-jxc
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   5) [jaxb-runtime]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : jaxb-runtime
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   6) [jaxb-xjc]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : jaxb-xjc
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   7) [txw2]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : txw2
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
++=================== [End Brief Plugin Build Dependency Information]
+
+
+[DEBUG] StaleFile [C:\work\sonata-buddy\sonata-buddy-core\target\jaxb2\.generate-db-connections-xjcStaleFlag] not found. JAXB (re-)generation required.
+[DEBUG] Adding URL [file:/C:/work/sonata-buddy/sonata-buddy-core/target/classes]
+[DEBUG] Adding URL [file:/d:/maven-repo/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-jdbc/4.0.6.RELEASE/spring-jdbc-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-beans/4.0.6.RELEASE/spring-beans-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-core/4.0.6.RELEASE/spring-core-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-tx/4.0.6.RELEASE/spring-tx-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-context/4.0.6.RELEASE/spring-context-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-aop/4.0.6.RELEASE/spring-aop-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/aopalliance/aopalliance/1.0/aopalliance-1.0.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-expression/4.0.6.RELEASE/spring-expression-4.0.6.RELEASE.jar]
+[DEBUG] Using explicitly configured encoding [UTF-8]
+[DEBUG] ToolExecutionEnvironment setup -- Starting.
+[DEBUG] ToolExecutionEnvironment setup -- Done.
+[WARNING] Configured encoding [UTF-8] differs from encoding given in system property 'file.encoding' [Cp1250]
+[DEBUG] Using explicitly configured encoding [UTF-8]
+[INFO] Adding 'extension' flag to XJC arguments, since the 'generateEpisode' argument is given. (XJCs 'episode' argument requires that the 'extension' argument is provided).
+[INFO] Ignored given or default xjbSources [C:\work\sonata-buddy\sonata-buddy-core\src\main\xjb], since it is not an existent file or directory.
+[DEBUG] Accepted configured sources [C:\work\sonata-buddy\sonata-buddy-core\src\main\resources\bravura\sonata\buddy\config\database-connections.xsd]
+[DEBUG]  [1 existing sources] ...
+[DEBUG]    1/1: C:\work\sonata-buddy\sonata-buddy-core\src\main\resources\bravura\sonata\buddy\config\database-connections.xsd
+[DEBUG]  ... End [1 existing sources]
+[DEBUG] 
++=================== [Filtered sources]
+|
+| 2 Exclude patterns:
+| [1/2]: Filter [PatternFileFilter]
+|        Processes nulls: [false]
+|        Accept on match: [true]
+|        Initialized    : [true]
+|        3 regularExpressions :
+|         [1/3]: (\p{javaLetterOrDigit}|\p{Punct})+README.*
+|         [2/3]: (\p{javaLetterOrDigit}|\p{Punct})+\.xml
+|         [3/3]: (\p{javaLetterOrDigit}|\p{Punct})+\.txt
+| [2/2]: Filter [PatternFileFilter]
+|        Processes nulls: [false]
+|        Accept on match: [true]
+|        Initialized    : [true]
+|        1 regularExpressions :
+|         [1/1]: (\p{javaLetterOrDigit}|\p{Punct})+\.xjb
+|
+| 1 Standard Directories:
+| [1/1]: src/main/xsd
+|
+| 1 Results:
+| [1/1]: file:/C:/work/sonata-buddy/sonata-buddy-core/src/main/resources/bravura/sonata/buddy/config/database-connections.xsd
+|
++=================== [End Filtered sources]
+
+
+[DEBUG] 
++=================== [12 XJC Arguments]
+|
+| [0]: -xmlschema
+| [1]: -mark-generated
+| [2]: -encoding
+| [3]: UTF-8
+| [4]: -p
+| [5]: bravura.sonata.buddy.dbconnection.dao
+| [6]: -d
+| [7]: C:\work\sonata-buddy\sonata-buddy-core\src\generated
+| [8]: -extension
+| [9]: -episode
+| [10]: C:\work\sonata-buddy\sonata-buddy-core\src\generated\META-INF\sun-jaxb.episode
+| [11]: /C:/work/sonata-buddy/sonata-buddy-core/src/main/resources/bravura/sonata/buddy/config/database-connections.xsd
+|
++=================== [End 12 XJC Arguments]
+
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:24 PM com.sun.xml.bind.v2.util.XmlFactory createSchemaFactory
+FINE: SchemaFactory instance: com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory@42f95a7f
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:24 PM com.sun.xml.bind.v2.util.XmlFactory allowExternalAccess
+FINE: Property "http://javax.xml.XMLConstants/property/accessExternalSchema" is supported and has been successfully set by used JAXP implementation.
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:24 PM com.sun.xml.bind.v2.util.XmlFactory allowExternalDTDAccess
+FINE: Property "http://javax.xml.XMLConstants/property/accessExternalDTD" is supported and has been successfully set by used JAXP implementation.
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:24 PM com.sun.xml.bind.v2.util.XmlFactory createParserFactory
+FINE: SAXParserFactory instance: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl@4b8a8992
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:24 PM com.sun.xml.xsom.parser.JAXPParser allowFileAccess
+FINE: Property "http://javax.xml.XMLConstants/property/accessExternalSchema" is supported and has been successfuly set by used JAXP implementation.
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:24 PM com.sun.xml.xsom.parser.JAXPParser allowFileAccess
+FINE: Property "http://javax.xml.XMLConstants/property/accessExternalSchema" is supported and has been successfuly set by used JAXP implementation.
+
+[DEBUG] Processing file [0/4]: bravura\sonata\buddy\dbconnection\dao\DatabaseConnection.java
+[DEBUG] Processing file [1/4]: bravura\sonata\buddy\dbconnection\dao\DatabaseConnections.java
+[DEBUG] Processing file [2/4]: bravura\sonata\buddy\dbconnection\dao\ObjectFactory.java
+[DEBUG] Processing file [3/4]: bravura\sonata\buddy\dbconnection\dao\package-info.java
+[DEBUG] ToolExecutionEnvironment restore -- Starting.
+[DEBUG] ToolExecutionEnvironment restore -- Done.
+[DEBUG] Created staleFile [C:\work\sonata-buddy\sonata-buddy-core\target\jaxb2\.generate-db-connections-xjcStaleFlag]
+[INFO] 
+[INFO] --- jaxb2-maven-plugin:2.1:xjc (generate-preferences) @ sonata-buddy-core ---
+[DEBUG] Configuring mojo org.codehaus.mojo:jaxb2-maven-plugin:2.1:xjc from plugin realm ClassRealm[plugin>org.codehaus.mojo:jaxb2-maven-plugin:2.1, parent: sun.misc.Launcher$AppClassLoader@6f2192a9]
+[DEBUG] Configuring mojo 'org.codehaus.mojo:jaxb2-maven-plugin:2.1:xjc' with basic configurator -->
+[DEBUG]   (f) addGeneratedAnnotation = true
+[DEBUG]   (f) arguments = []
+[DEBUG]   (f) clearOutputDir = false
+[DEBUG]   (f) enableIntrospection = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) execution = org.codehaus.mojo:jaxb2-maven-plugin:2.1:xjc {execution: generate-preferences}
+[DEBUG]   (f) extension = false
+[DEBUG]   (f) failOnNoSchemas = true
+[DEBUG]   (f) generateEpisode = true
+[DEBUG]   (f) laxSchemaValidation = false
+[DEBUG]   (f) noGeneratedHeaderComments = false
+[DEBUG]   (f) noPackageLevelAnnotations = false
+[DEBUG]   (f) outputDirectory = C:\work\sonata-buddy\sonata-buddy-core\src\generated
+[DEBUG]   (f) packageName = bravura.sonata.buddy.config.xmlconfig
+[DEBUG]   (f) project = MavenProject: bravura:sonata-buddy-core:1.0-SNAPSHOT @ C:\work\sonata-buddy\sonata-buddy-core\pom.xml
+[DEBUG]   (f) quiet = false
+[DEBUG]   (f) readOnly = false
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5213fce3
+[DEBUG]   (f) skipXjc = false
+[DEBUG]   (f) sourceType = XmlSchema
+[DEBUG]   (f) sources = [src/main/resources/bravura/sonata/buddy/config/preferences.xsd]
+[DEBUG]   (f) staleFileDirectory = C:\work\sonata-buddy\sonata-buddy-core\target\jaxb2
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] 
++=================== [Brief Plugin Build Dependency Information]
+|
+| Note: These dependencies pertain to what was used to build *the plugin*.
+|       Check project dependencies to see the ones used in *your build*.
+|
+|
+| Plugin's own information
+|     GroupId    : org.codehaus.mojo
+|     ArtifactID : jaxb2-maven-plugin
+|     Version    : 2.1
+|     Buildtime  : Sat May 02 14:02:35 CEST 2015
+|
+| Plugin's JAXB-related dependencies
+|
+|   1) [jaxb-api]
+|     GroupId    : javax.xml.bind
+|     ArtifactID : jaxb-api
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   2) [codemodel]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : codemodel
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   3) [jaxb-core]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : jaxb-core
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   4) [jaxb-jxc]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : jaxb-jxc
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   5) [jaxb-runtime]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : jaxb-runtime
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   6) [jaxb-xjc]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : jaxb-xjc
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
+|   7) [txw2]
+|     GroupId    : org.glassfish.jaxb
+|     ArtifactID : txw2
+|     Version    : 2.2.11
+|     Scope      : compile
+|     Type       : jar
+|
++=================== [End Brief Plugin Build Dependency Information]
+
+
+[DEBUG] StaleFile [C:\work\sonata-buddy\sonata-buddy-core\target\jaxb2\.generate-preferences-xjcStaleFlag] not found. JAXB (re-)generation required.
+[DEBUG] Adding URL [file:/C:/work/sonata-buddy/sonata-buddy-core/target/classes]
+[DEBUG] Adding URL [file:/d:/maven-repo/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-jdbc/4.0.6.RELEASE/spring-jdbc-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-beans/4.0.6.RELEASE/spring-beans-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-core/4.0.6.RELEASE/spring-core-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-tx/4.0.6.RELEASE/spring-tx-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-context/4.0.6.RELEASE/spring-context-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-aop/4.0.6.RELEASE/spring-aop-4.0.6.RELEASE.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/aopalliance/aopalliance/1.0/aopalliance-1.0.jar]
+[DEBUG] Adding URL [file:/d:/maven-repo/org/springframework/spring-expression/4.0.6.RELEASE/spring-expression-4.0.6.RELEASE.jar]
+[DEBUG] Using explicitly configured encoding [UTF-8]
+[DEBUG] ToolExecutionEnvironment setup -- Starting.
+[DEBUG] ToolExecutionEnvironment setup -- Done.
+[WARNING] Configured encoding [UTF-8] differs from encoding given in system property 'file.encoding' [Cp1250]
+[DEBUG] Using explicitly configured encoding [UTF-8]
+[INFO] Adding 'extension' flag to XJC arguments, since the 'generateEpisode' argument is given. (XJCs 'episode' argument requires that the 'extension' argument is provided).
+[INFO] Ignored given or default xjbSources [C:\work\sonata-buddy\sonata-buddy-core\src\main\xjb], since it is not an existent file or directory.
+[DEBUG] Accepted configured sources [C:\work\sonata-buddy\sonata-buddy-core\src\main\resources\bravura\sonata\buddy\config\preferences.xsd]
+[DEBUG]  [1 existing sources] ...
+[DEBUG]    1/1: C:\work\sonata-buddy\sonata-buddy-core\src\main\resources\bravura\sonata\buddy\config\preferences.xsd
+[DEBUG]  ... End [1 existing sources]
+[DEBUG] 
++=================== [Filtered sources]
+|
+| 2 Exclude patterns:
+| [1/2]: Filter [PatternFileFilter]
+|        Processes nulls: [false]
+|        Accept on match: [true]
+|        Initialized    : [true]
+|        3 regularExpressions :
+|         [1/3]: (\p{javaLetterOrDigit}|\p{Punct})+README.*
+|         [2/3]: (\p{javaLetterOrDigit}|\p{Punct})+\.xml
+|         [3/3]: (\p{javaLetterOrDigit}|\p{Punct})+\.txt
+| [2/2]: Filter [PatternFileFilter]
+|        Processes nulls: [false]
+|        Accept on match: [true]
+|        Initialized    : [true]
+|        1 regularExpressions :
+|         [1/1]: (\p{javaLetterOrDigit}|\p{Punct})+\.xjb
+|
+| 1 Standard Directories:
+| [1/1]: src/main/xsd
+|
+| 1 Results:
+| [1/1]: file:/C:/work/sonata-buddy/sonata-buddy-core/src/main/resources/bravura/sonata/buddy/config/preferences.xsd
+|
++=================== [End Filtered sources]
+
+
+[DEBUG] 
++=================== [12 XJC Arguments]
+|
+| [0]: -xmlschema
+| [1]: -mark-generated
+| [2]: -encoding
+| [3]: UTF-8
+| [4]: -p
+| [5]: bravura.sonata.buddy.config.xmlconfig
+| [6]: -d
+| [7]: C:\work\sonata-buddy\sonata-buddy-core\src\generated
+| [8]: -extension
+| [9]: -episode
+| [10]: C:\work\sonata-buddy\sonata-buddy-core\src\generated\META-INF\sun-jaxb.episode
+| [11]: /C:/work/sonata-buddy/sonata-buddy-core/src/main/resources/bravura/sonata/buddy/config/preferences.xsd
+|
++=================== [End 12 XJC Arguments]
+
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:25 PM com.sun.xml.bind.v2.util.XmlFactory createSchemaFactory
+FINE: SchemaFactory instance: com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory@5c464132
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:25 PM com.sun.xml.bind.v2.util.XmlFactory allowExternalAccess
+FINE: Property "http://javax.xml.XMLConstants/property/accessExternalSchema" is supported and has been successfully set by used JAXP implementation.
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:25 PM com.sun.xml.bind.v2.util.XmlFactory allowExternalDTDAccess
+FINE: Property "http://javax.xml.XMLConstants/property/accessExternalDTD" is supported and has been successfully set by used JAXP implementation.
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:25 PM com.sun.xml.bind.v2.util.XmlFactory createParserFactory
+FINE: SAXParserFactory instance: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl@bd1f554
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:25 PM com.sun.xml.xsom.parser.JAXPParser allowFileAccess
+FINE: Property "http://javax.xml.XMLConstants/property/accessExternalSchema" is supported and has been successfuly set by used JAXP implementation.
+
+[DEBUG] [SchemaGen]: Sep 20, 2015 12:34:25 PM com.sun.xml.xsom.parser.JAXPParser allowFileAccess
+FINE: Property "http://javax.xml.XMLConstants/property/accessExternalSchema" is supported and has been successfuly set by used JAXP implementation.
+
+[DEBUG] Processing file [0/3]: bravura\sonata\buddy\config\xmlconfig\ObjectFactory.java
+[DEBUG] Processing file [1/3]: bravura\sonata\buddy\config\xmlconfig\Preferences.java
+[DEBUG] Processing file [2/3]: bravura\sonata\buddy\config\xmlconfig\package-info.java
+[DEBUG] ToolExecutionEnvironment restore -- Starting.
+[DEBUG] ToolExecutionEnvironment restore -- Done.
+[DEBUG] Created staleFile [C:\work\sonata-buddy\sonata-buddy-core\target\jaxb2\.generate-preferences-xjcStaleFlag]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sonata-buddy-core ---
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=154, DefaultDependencyCollector.transformTime=6}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@6f2192a9]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = C:\work\sonata-buddy\sonata-buddy-core\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: bravura:sonata-buddy-core:1.0-SNAPSHOT @ C:\work\sonata-buddy\sonata-buddy-core\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: C:\work\sonata-buddy\sonata-buddy-core\src\main\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4751b935
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SYSTEMROOT=C:\windows, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.PROMPT=$P$G, os.name=Windows 7, env.FP_NO_HOST_CHECK=NO, sun.boot.class.path=c:\Java\jdk1.7.0_71\jre\lib\resources.jar;c:\Java\jdk1.7.0_71\jre\lib\rt.jar;c:\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;c:\Java\jdk1.7.0_71\jre\lib\jsse.jar;c:\Java\jdk1.7.0_71\jre\lib\jce.jar;c:\Java\jdk1.7.0_71\jre\lib\charsets.jar;c:\Java\jdk1.7.0_71\jre\lib\jfr.jar;c:\Java\jdk1.7.0_71\jre\classes, env.COMPUTERNAME=LTPL003810, user.country.format=GB, env.ALLUSERSPROFILE=C:\ProgramData, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_71-b14, env.HOMEPATH=\, project.build.sourceEncoding=UTF-8, env.HOMESHARE=\\wawfs01.bravurasolutions.local\private\tszymanski, user.name=tszymanski, maven.build.version=Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T22:58:10+02:00), user.language.format=en, env.WINDOWS_TRACING_FLAGS=3, env.PATH=D:\Programy\oracle12c\product\12.1.0\dbhome_1\bin;D:\Programy\oracleclient\product\11.2.0\client_1;D:\Programy\oracleclient\product\11.2.0\client_1\bin;C:\ProgramData\Oracle\Java\javapath;D:\Programy\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;d:\Programy\Microsoft SQL Server Shared Features\100\Tools\Binn\;d:\Programy\Microsoft SQL Server\100\Tools\Binn\;d:\Programy\Microsoft SQL Server\100\DTS\Binn\;d:\Programy\Microsoft SQL Server Shared Features\100\Tools\Binn\VSShell\Common7\IDE\;d:\Programy\Microsoft SQL Server Shared Features\100\DTS\Binn\;c:\applications\apache-ant-1.9.4\bin;d:\Programy\groovy-2.4.3\bin;c:\applications\apache-maven-3.2.3\bin;c:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Skype\Phone\, user.language=pl, env.WINDIR=C:\windows, sun.boot.library.path=c:\Java\jdk1.7.0_71\jre\bin, classworlds.conf=c:\applications\apache-maven-3.2.3\bin\m2.conf, java.version=1.7.0_71, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel, user.timezone=Europe/Belgrade, env.TEMP=C:\Users\TSZYMA~1\AppData\Local\Temp, sun.arch.data.model=64, env.ANDROID_STUDIO_JDK=c:\Java\jdk1.8.0_25, env.WINDOWS_TRACING_LOGFILE=C:\BVTBin\Tests\installpackage\csilogfile.log, java.endorsed.dirs=c:\Java\jdk1.7.0_71\jre\lib\endorsed, sun.cpu.isalist=amd64, env.HOMEDRIVE=I:, sun.jnu.encoding=Cp1250, file.encoding.pkg=sun.io, env.SYSTEMDRIVE=C:, file.separator=\, java.specification.name=Java Platform API Specification, env.GROOVY_HOME=d:\Programy\groovy-2.4.3, java.class.version=51.0, org.slf4j.simpleLogger.defaultLogLevel=debug, user.country=PL, java.home=c:\Java\jdk1.7.0_71\jre, env.APPDATA=C:\Users\tszymanski\AppData\Roaming, env.PUBLIC=C:\Users\Public, java.vm.info=mixed mode, env.OS=Windows_NT, os.version=6.1, env.=::=::\, path.separator=;, java.vm.version=24.71-b01, user.variant=, env.USERPROFILE=C:\Users\tszymanski, env.JAVA_HOME=c:\Java\jdk1.7.0_71, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.TMP=C:\Users\TSZYMA~1\AppData\Local\Temp, env.PROGRAMFILES=C:\Program Files, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, user.script=, user.home=C:\Users\tszymanski, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, env.=EXITCODE=00000000, env.SESSIONNAME=Console, java.specification.vendor=Oracle Corporation, env.M2_HOME=c:\applications\apache-maven-3.2.3, env.NUMBER_OF_PROCESSORS=4, java.library.path=c:\Java\jdk1.7.0_71\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;D:\Programy\oracle12c\product\12.1.0\dbhome_1\bin;D:\Programy\oracleclient\product\11.2.0\client_1;D:\Programy\oracleclient\product\11.2.0\client_1\bin;C:\ProgramData\Oracle\Java\javapath;D:\Programy\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;d:\Programy\Microsoft SQL Server Shared Features\100\Tools\Binn\;d:\Programy\Microsoft SQL Server\100\Tools\Binn\;d:\Programy\Microsoft SQL Server\100\DTS\Binn\;d:\Programy\Microsoft SQL Server Shared Features\100\Tools\Binn\VSShell\Common7\IDE\;d:\Programy\Microsoft SQL Server Shared Features\100\DTS\Binn\;c:\applications\apache-ant-1.9.4\bin;d:\Programy\groovy-2.4.3\bin;c:\applications\apache-maven-3.2.3\bin;c:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Skype\Phone\;., java.vendor.url=http://java.oracle.com/, springVersion=4.0.6.RELEASE, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.USERDNSDOMAIN=BRAVURASOLUTIONS.LOCAL, env.PSMODULEPATH=C:\windows\system32\WindowsPowerShell\v1.0\Modules\;C:\Program Files\Microsoft Security Client\MpProvider\, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.MAVEN_CMD_LINE_ARGS=compile -X -pl sonata-buddy-core, java.vm.vendor=Oracle Corporation, maven.home=c:\applications\apache-maven-3.2.3, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher compile -X -pl sonata-buddy-core, java.class.path=c:\applications\apache-maven-3.2.3\boot\plexus-classworlds-2.5.1.jar, env.PROGRAMW6432=C:\Program Files, maven.version=3.2.3, env.REBEL_HOME=C:\applications\eclipse\plugins\org.zeroturnaround.eclipse.embedder_5.6.3.SR1-201409161234\jrebel\, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.MAVEN_JAVA_EXE="c:\Java\jdk1.7.0_71\bin\java.exe", java.vm.specification.name=Java Virtual Machine Specification, env.LOGONSERVER=\\WAWDC04, java.vm.specification.version=1.7, env.PROCESSOR_ARCHITECTURE=AMD64, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, env.HOME=I:\, java.io.tmpdir=C:\Users\TSZYMA~1\AppData\Local\Temp\, env.UATDATA=C:\windows\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77, env.PROCESSOR_REVISION=3a09, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.MAVEN_OPTS=-Xms256m -Xmx512m, env.PROGRAMDATA=C:\ProgramData, env.COMSPEC=C:\windows\system32\cmd.exe, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=c:\Java\jdk1.7.0_71\jre\lib\ext;C:\windows\Sun\Java\lib\ext, env.LOCALAPPDATA=C:\Users\tszymanski\AppData\Local, user.dir=C:\work\sonata-buddy, line.separator=
+, env.CLASSWORLDS_JAR="c:\applications\apache-maven-3.2.3\boot\plexus-classworlds-2.5.1.jar", java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.ERROR_CODE=0, env.USERNAME=tszymanski, file.encoding=Cp1250, env.USERDOMAIN=BRAVURA, java.specification.version=1.7, env.=C:=C:\work\sonata-buddy, env.PROCESSOR_LEVEL=6}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory C:\work\sonata-buddy\sonata-buddy-core\src\main\resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 4 resources
+[DEBUG] file appcontext.xml has a filtered file extension
+[DEBUG] copy C:\work\sonata-buddy\sonata-buddy-core\src\main\resources\appcontext.xml to C:\work\sonata-buddy\sonata-buddy-core\target\classes\appcontext.xml
+[DEBUG] file database-connections.xml has a filtered file extension
+[DEBUG] copy C:\work\sonata-buddy\sonata-buddy-core\src\main\resources\bravura\sonata\buddy\config\database-connections.xml to C:\work\sonata-buddy\sonata-buddy-core\target\classes\bravura\sonata\buddy\config\database-connections.xml
+[DEBUG] file database-connections.xsd has a filtered file extension
+[DEBUG] copy C:\work\sonata-buddy\sonata-buddy-core\src\main\resources\bravura\sonata\buddy\config\database-connections.xsd to C:\work\sonata-buddy\sonata-buddy-core\target\classes\bravura\sonata\buddy\config\database-connections.xsd
+[DEBUG] file preferences.xsd has a filtered file extension
+[DEBUG] copy C:\work\sonata-buddy\sonata-buddy-core\src\main\resources\bravura\sonata\buddy\config\preferences.xsd to C:\work\sonata-buddy\sonata-buddy-core\target\classes\bravura\sonata\buddy\config\preferences.xsd
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ sonata-buddy-core ---
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache-snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache-snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache-snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo (http://covcdbuci01/artifactory/repo) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=1, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=242, DefaultDependencyCollector.transformTime=7}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:1.0
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.5.5
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@6f2192a9]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = C:\work\sonata-buddy\sonata-buddy-core
+[DEBUG]   (f) buildDirectory = C:\work\sonata-buddy\sonata-buddy-core\target
+[DEBUG]   (f) classpathElements = [C:\work\sonata-buddy\sonata-buddy-core\target\classes, d:\maven-repo\c3p0\c3p0\0.9.1.2\c3p0-0.9.1.2.jar, d:\maven-repo\org\springframework\spring-jdbc\4.0.6.RELEASE\spring-jdbc-4.0.6.RELEASE.jar, d:\maven-repo\org\springframework\spring-beans\4.0.6.RELEASE\spring-beans-4.0.6.RELEASE.jar, d:\maven-repo\org\springframework\spring-core\4.0.6.RELEASE\spring-core-4.0.6.RELEASE.jar, d:\maven-repo\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar, d:\maven-repo\org\springframework\spring-tx\4.0.6.RELEASE\spring-tx-4.0.6.RELEASE.jar, d:\maven-repo\org\springframework\spring-context\4.0.6.RELEASE\spring-context-4.0.6.RELEASE.jar, d:\maven-repo\org\springframework\spring-aop\4.0.6.RELEASE\spring-aop-4.0.6.RELEASE.jar, d:\maven-repo\aopalliance\aopalliance\1.0\aopalliance-1.0.jar, d:\maven-repo\org\springframework\spring-expression\4.0.6.RELEASE\spring-expression-4.0.6.RELEASE.jar]
+[DEBUG]   (f) compileSourceRoots = [C:\work\sonata-buddy\sonata-buddy-core\src\main\java, C:\work\sonata-buddy\sonata-buddy-core\src\generated]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = C:\work\sonata-buddy\sonata-buddy-core\target\generated-sources\annotations
+[DEBUG]   (f) includes = [src/generated/**/*.java, src/main/java/**/*.java]
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = C:\work\sonata-buddy\sonata-buddy-core\target\classes
+[DEBUG]   (f) projectArtifact = bravura:sonata-buddy-core:jar:1.0-SNAPSHOT
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@4751b935
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4751b935
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [C:\work\sonata-buddy\sonata-buddy-core\src\main\java
+ C:\work\sonata-buddy\sonata-buddy-core\src\generated]
+[DEBUG] Classpath: [C:\work\sonata-buddy\sonata-buddy-core\target\classes
+ d:\maven-repo\c3p0\c3p0\0.9.1.2\c3p0-0.9.1.2.jar
+ d:\maven-repo\org\springframework\spring-jdbc\4.0.6.RELEASE\spring-jdbc-4.0.6.RELEASE.jar
+ d:\maven-repo\org\springframework\spring-beans\4.0.6.RELEASE\spring-beans-4.0.6.RELEASE.jar
+ d:\maven-repo\org\springframework\spring-core\4.0.6.RELEASE\spring-core-4.0.6.RELEASE.jar
+ d:\maven-repo\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar
+ d:\maven-repo\org\springframework\spring-tx\4.0.6.RELEASE\spring-tx-4.0.6.RELEASE.jar
+ d:\maven-repo\org\springframework\spring-context\4.0.6.RELEASE\spring-context-4.0.6.RELEASE.jar
+ d:\maven-repo\org\springframework\spring-aop\4.0.6.RELEASE\spring-aop-4.0.6.RELEASE.jar
+ d:\maven-repo\aopalliance\aopalliance\1.0\aopalliance-1.0.jar
+ d:\maven-repo\org\springframework\spring-expression\4.0.6.RELEASE\spring-expression-4.0.6.RELEASE.jar]
+[DEBUG] Output directory: C:\work\sonata-buddy\sonata-buddy-core\target\classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.062 s
+[INFO] Finished at: 2015-09-20T12:34:25+02:00
+[INFO] Final Memory: 11M/246M
+[INFO] ------------------------------------------------------------------------

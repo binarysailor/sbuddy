@@ -1,7 +1,7 @@
 package bravura.sonata.buddy.config.xmlconfig;
 
-import bravura.sonata.buddy.common.dbconnection.DatabaseConnection;
-import bravura.sonata.buddy.common.dbconnection.DatabaseConnections;
+import bravura.sonata.buddy.dbconnection.DatabaseConnection;
+import bravura.sonata.buddy.dbconnection.DatabaseConnections;
 import bravura.sonata.buddy.files.Directory;
 
 import javax.xml.bind.JAXBContext;
@@ -24,10 +24,10 @@ public class XmlDatabaseConnections {
             JAXBContext jc = JAXBContext.newInstance(
                     DatabaseConnections.class);
             Unmarshaller unmarshaller = jc.createUnmarshaller();
-            bravura.sonata.buddy.config.xmlconfig.DatabaseConnections xmlDbConnections =
-                (bravura.sonata.buddy.config.xmlconfig.DatabaseConnections)
+            bravura.sonata.buddy.dbconnection.dao.DatabaseConnections xmlDbConnections =
+                (bravura.sonata.buddy.dbconnection.dao.DatabaseConnections)
                         unmarshaller.unmarshal(configInput);
-            for (bravura.sonata.buddy.config.xmlconfig.DatabaseConnection xmlConnection : xmlDbConnections.getDatabaseConnection()) {
+            for (bravura.sonata.buddy.dbconnection.dao.DatabaseConnection xmlConnection : xmlDbConnections.getDatabaseConnection()) {
                 DatabaseConnection connection = new DatabaseConnection(
                         xmlConnection.getName(),
                         xmlConnection.getUrl(),

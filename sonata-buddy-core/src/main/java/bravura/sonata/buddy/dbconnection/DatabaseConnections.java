@@ -1,4 +1,6 @@
-package bravura.sonata.buddy.common.dbconnection;
+package bravura.sonata.buddy.dbconnection;
+
+import bravura.sonata.buddy.dbconnection.dao.DatabaseConnectionDAO;
 
 import javax.sql.DataSource;
 

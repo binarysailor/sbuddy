@@ -2,28 +2,31 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>sonata-buddy</artifactId>
-        <groupId>bravura</groupId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>bravura</groupId>
+        <artifactId>sonata-buddy</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <artifactId>sonata-buddy-core</artifactId>
+    <packaging>jar</packaging>
 
     <build>
         <plugins>
+
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
-                    <includes>
-                        <include>src/main/java/**/*.java</include>
-                        <include>src/generated/**/*.java</include>
-                    </includes>
+                    <generatedSourcesDirectory>src/generated</generatedSourcesDirectory>
                 </configuration>
             </plugin>
+
+            <!--
             <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
@@ -36,6 +39,7 @@
                     </archive>
                 </configuration>
             </plugin>
+            -->
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.4</version>
@@ -59,12 +63,33 @@
                 <version>2.1</version>
                 <configuration>
                     <outputDirectory>src/generated</outputDirectory>
-                    <sources>
-                        <source>src/main/resources/bravura/sonata/buddy/config/preferences.xsd</source>
-                        <source>src/main/resources/bravura/sonata/buddy/config/database-connections.xsd</source>
-                    </sources>
-                    <packageName>bravura.sonata.buddy.config.xmlconfig</packageName>
+                    <addGeneratedAnnotation>true</addGeneratedAnnotation>
+                    <clearOutputDir>false</clearOutputDir>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>generate-db-connections</id>
+                        <goals><goal>xjc</goal></goals>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <sources>
+                                <source>src/main/resources/bravura/sonata/buddy/config/database-connections.xsd</source>
+                            </sources>
+                            <packageName>bravura.sonata.buddy.dbconnection.dao</packageName>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>generate-preferences</id>
+                        <goals><goal>xjc</goal></goals>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <sources>
+                                <source>src/main/resources/bravura/sonata/buddy/config/preferences.xsd</source>
+                            </sources>
+                            <packageName>bravura.sonata.buddy.config.xmlconfig</packageName>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

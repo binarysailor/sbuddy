@@ -1,5 +1,7 @@
 package bravura.sonata.buddy;
 
+import bravura.sonata.buddy.ui.SonataBuddyTab;
+
 import java.util.Collection;
 
 /**

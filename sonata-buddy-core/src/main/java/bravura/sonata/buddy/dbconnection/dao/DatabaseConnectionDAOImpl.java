@@ -1,6 +1,8 @@
-package bravura.sonata.buddy.common.dbconnection;
+package bravura.sonata.buddy.dbconnection.dao;
 
 import bravura.sonata.buddy.config.xmlconfig.XmlDatabaseConnections;
+import bravura.sonata.buddy.dbconnection.DatabaseConnection;
+import bravura.sonata.buddy.dbconnection.DatabaseConnectionConfigException;
 import bravura.sonata.buddy.files.Directory;
 
 import javax.xml.bind.JAXBException;

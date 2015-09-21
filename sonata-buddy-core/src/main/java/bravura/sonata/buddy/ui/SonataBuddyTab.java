@@ -1,4 +1,4 @@
-package bravura.sonata.buddy;
+package bravura.sonata.buddy.ui;
 
 import javax.swing.*;
 

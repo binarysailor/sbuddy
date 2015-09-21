@@ -2,7 +2,7 @@ package bravura.sonata.buddy.codetypeviewer;
 
 import bravura.sonata.buddy.codetypeviewer.datamodel.Code;
 import bravura.sonata.buddy.codetypeviewer.datamodel.CodeType;
-import bravura.sonata.buddy.common.dbconnection.DatabaseConnections;
+import bravura.sonata.buddy.dbconnection.DatabaseConnections;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.List;

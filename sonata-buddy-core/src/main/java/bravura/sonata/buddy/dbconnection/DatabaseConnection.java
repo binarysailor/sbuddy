@@ -1,4 +1,4 @@
-package bravura.sonata.buddy.common.dbconnection;
+package bravura.sonata.buddy.dbconnection;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 

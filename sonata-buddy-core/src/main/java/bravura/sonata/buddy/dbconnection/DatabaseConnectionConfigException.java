@@ -1,4 +1,4 @@
-package bravura.sonata.buddy.common.dbconnection;
+package bravura.sonata.buddy.dbconnection;
 
 /**
  * Created by tszymanski on 12/09/2015.

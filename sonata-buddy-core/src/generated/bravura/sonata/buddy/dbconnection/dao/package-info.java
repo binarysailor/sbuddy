@@ -5,5 +5,5 @@
 // Generated on: 2015.09.20 at 04:26:44 PM CEST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.bravurasolutions.com/sonatabuddy/preferences", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package bravura.sonata.buddy.config.xmlconfig;
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.bravurasolutions.com/sonatabuddy/database-connections", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+package bravura.sonata.buddy.dbconnection.dao;

@@ -1,4 +1,4 @@
-package bravura.sonata.buddy.common.quietperiod;
+package bravura.sonata.buddy.quietperiod;
 
 public class QuietPeriod<T> extends Thread {
 

@@ -1,7 +1,7 @@
 package bravura.sonata.buddy.navigsearch;
 
 import bravura.sonata.buddy.SonataBuddyModule;
-import bravura.sonata.buddy.SonataBuddyTab;
+import bravura.sonata.buddy.ui.SonataBuddyTab;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 

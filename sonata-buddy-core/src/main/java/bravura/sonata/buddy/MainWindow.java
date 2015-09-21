@@ -1,9 +1,11 @@
 package bravura.sonata.buddy;
 
 
-import bravura.sonata.buddy.common.dbconnection.DatabaseConnectionPicker;
-import bravura.sonata.buddy.common.dbconnection.DatabaseConnections;
+import bravura.sonata.buddy.dbconnection.ui.DatabaseConnectionPicker;
+import bravura.sonata.buddy.dbconnection.DatabaseConnections;
 import bravura.sonata.buddy.config.Preferences;
+import bravura.sonata.buddy.ui.ComponentDefaults;
+import bravura.sonata.buddy.ui.SonataBuddyTab;
 import org.springframework.context.ApplicationContext;
 
 import javax.swing.*;
@@ -56,7 +58,9 @@ public class MainWindow extends JFrame {
         for (SonataBuddyModule module : modules.values()) {
             Collection<SonataBuddyTab> moduleTabs = module.getTabs();
             for (SonataBuddyTab moduleTab : moduleTabs) {
-                tabs.addTab(moduleTab.getLabel(), moduleTab.createUI());
+                JPanel tabUi = moduleTab.createUI();
+                ComponentDefaults.setupTab(tabUi );
+                tabs.addTab(moduleTab.getLabel(), tabUi);
             }
         }
     }

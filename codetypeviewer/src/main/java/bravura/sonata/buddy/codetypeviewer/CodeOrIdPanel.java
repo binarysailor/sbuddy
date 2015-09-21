@@ -1,8 +1,8 @@
 package bravura.sonata.buddy.codetypeviewer;
 
-import bravura.sonata.buddy.common.delayedsearch.SearchCriteriaProducer;
-import bravura.sonata.buddy.common.delayedsearch.SearchEngine;
-import bravura.sonata.buddy.common.delayedsearch.SearchTextListener;
+import bravura.sonata.buddy.delayedsearch.SearchCriteriaProducer;
+import bravura.sonata.buddy.delayedsearch.SearchEngine;
+import bravura.sonata.buddy.delayedsearch.SearchTextListener;
 import bravura.sonata.buddy.config.Preferences;
 import org.springframework.util.StringUtils;
 

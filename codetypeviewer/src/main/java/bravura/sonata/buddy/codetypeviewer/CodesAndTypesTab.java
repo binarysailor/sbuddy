@@ -1,13 +1,12 @@
 package bravura.sonata.buddy.codetypeviewer;
 
-import bravura.sonata.buddy.BuddyTabBuilder;
 import bravura.sonata.buddy.codetypeviewer.datamodel.Code;
 import bravura.sonata.buddy.codetypeviewer.datamodel.CodeType;
-import bravura.sonata.buddy.common.delayedsearch.SearchCriteriaProducer;
-import bravura.sonata.buddy.common.delayedsearch.SearchEngine;
-import bravura.sonata.buddy.common.progress.ComponentInsertion;
-import bravura.sonata.buddy.common.progress.ProgressIndicator;
 import bravura.sonata.buddy.config.Preferences;
+import bravura.sonata.buddy.delayedsearch.SearchCriteriaProducer;
+import bravura.sonata.buddy.delayedsearch.SearchEngine;
+import bravura.sonata.buddy.progress.ComponentInsertion;
+import bravura.sonata.buddy.progress.ProgressIndicator;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -34,7 +33,6 @@ public class CodesAndTypesTab extends JPanel
 
     public CodesAndTypesTab(Preferences preferences, CodesAndTypesDAO dao) {
         this.codesAndTypesDAO = dao;
-        new BuddyTabBuilder().setupTab(this);
 
         setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
