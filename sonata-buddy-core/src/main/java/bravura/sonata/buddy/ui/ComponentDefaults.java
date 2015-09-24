@@ -1,7 +1,7 @@
 package bravura.sonata.buddy.ui;
 
 import javax.swing.*;
-import java.awt.Dimension;
+import java.awt.*;
 
 /**
  * Created by tszymanski on 19/09/2015.

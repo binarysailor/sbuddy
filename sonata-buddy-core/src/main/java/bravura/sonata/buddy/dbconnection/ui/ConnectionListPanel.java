@@ -4,10 +4,9 @@ import bravura.sonata.buddy.dbconnection.DatabaseConnection;
 import bravura.sonata.buddy.dbconnection.DatabaseConnections;
 
 import javax.swing.*;
-import java.awt.Dimension;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
+import java.awt.*;
 import java.util.Arrays;
+import java.util.Enumeration;
 
 /**
  * Created by tszymanski on 19/09/2015.
@@ -16,61 +15,15 @@ class ConnectionListPanel extends JPanel {
 
     interface ConnectionListListener {
         void connectionSelected(ConnectionModel connection);
-    }
-
-    class ConnectionModel {
-        private String name;
-        private String url;
-        private String user;
-        private String password;
-
-        public ConnectionModel() {
-        }
-
-        public ConnectionModel(DatabaseConnection connection) {
-            this.name = connection.getName();
-            this.url = connection.getUrl();
-            this.user = connection.getUser();
-            this.password = connection.getPassword();
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
-
-        public String getUrl() {
-            return url;
-        }
-
-        public void setUrl(String url) {
-            this.url = url;
-        }
-
-        public String getUser() {
-            return user;
-        }
-
-        public void setUser(String user) {
-            this.user = user;
-        }
+        void connectionDeselected();
     }
 
     private DatabaseConnections connections;
     private JList<ConnectionModel> connectionList;
     private DefaultListModel<ConnectionModel> connectionListModel;
     private ConnectionListListener listener;
+    private JButton addButton;
+    private JButton deleteButton;
 
     ConnectionListPanel(DatabaseConnections connections) {
         this.connections = connections;
@@ -81,7 +34,76 @@ class ConnectionListPanel extends JPanel {
         Arrays.stream(connections.all()).forEach(c -> {
             connectionListModel.addElement(new ConnectionModel(c));
         });
+        connectionList = new JList(connectionListModel);
+        connectionList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        connectionList.addListSelectionListener(e -> {
+            if (listener != null) {
+                int selectionIndex = connectionList.getSelectionModel().getMaxSelectionIndex();
+                if (selectionIndex >= 0) {
+                    onConnectionSelected(connectionListModel.get(selectionIndex));
+                } else {
+                    onConnectionDeselected();
+                }
+            }
+        });
 
+        addButton = new JButton("Add");
+        addButton.addActionListener(e -> {
+            ConnectionModel newConnection = new ConnectionModel();
+            newConnection.setName("New connection");
+            connectionListModel.addElement(newConnection);
+            connectionList.setSelectedValue(newConnection, true);
+        });
+
+        deleteButton = new JButton("Delete");
+        deleteButton.addActionListener(e -> {
+            int selectionIndex = connectionList.getSelectionModel().getMaxSelectionIndex();
+            if (selectionIndex >= 0) {
+                connectionListModel.remove(selectionIndex);
+            }
+        });
+
+        buildUi();
+    }
+
+    public void selectDefaultConnection(DatabaseConnections connections) {
+        DatabaseConnection current = connections.getCurrent();
+        ConnectionModel connectionModel;
+        if (current == null) {
+            connectionModel = null;
+        } else {
+            connectionModel = findConnectionModel(current);
+        }
+
+        if (connectionModel == null) {
+            onConnectionDeselected();
+        } else {
+            connectionList.setSelectedValue(connectionModel, true);
+        }
+    }
+
+    private ConnectionModel findConnectionModel(DatabaseConnection current) {
+        Enumeration<ConnectionModel> elements = connectionListModel.elements();
+        while (elements.hasMoreElements()) {
+            ConnectionModel model = elements.nextElement();
+            if (model.getName().equals(current.getName())) {
+                return model;
+            }
+        }
+        return null;
+    }
+
+    private void onConnectionDeselected() {
+        deleteButton.setEnabled(false);
+        listener.connectionDeselected();
+    }
+
+    private void onConnectionSelected(ConnectionModel connection) {
+        deleteButton.setEnabled(true);
+        listener.connectionSelected(connection);
+    }
+
+    private void buildUi() {
         GridBagConstraints c = new GridBagConstraints();
         c.gridx = 0;
         c.gridy = 0;
@@ -90,21 +112,10 @@ class ConnectionListPanel extends JPanel {
         c.fill = GridBagConstraints.BOTH;
         c.ipadx = 5;
         c.ipady = 2;
-        connectionList = new JList(connectionListModel);
         add(connectionList, c);
 
         JPanel buttonsPanel = new JPanel();
-        JButton addButton = new JButton("Add");
-        addButton.addActionListener(e -> {
-            ConnectionModel newConnection = new ConnectionModel();
-            connectionListModel.addElement(newConnection);
-            connectionList.setSelectedValue(newConnection, true);
-            if (listener != null) {
-                listener.connectionSelected(newConnection);
-            }
-        });
         buttonsPanel.add(addButton);
-        JButton deleteButton = new JButton("Delete");
         buttonsPanel.add(deleteButton);
 
         c.gridy = 1;

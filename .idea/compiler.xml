@@ -17,15 +17,6 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="code-type-viewer" />
-        <module name="codetypeviewer" />
-        <module name="navigsearch" />
-      </profile>
       <profile default="false" name="Annotation profile for sonata-buddy-core" enabled="true">
         <sourceOutputDir name="src/generated" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
@@ -33,9 +24,16 @@
         <processorPath useClasspath="true" />
         <module name="sonata-buddy-core" />
       </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="codetypeviewer" />
+        <module name="navigsearch" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="code-type-viewer" target="1.8" />
       <module name="codetypeviewer" target="1.8" />
       <module name="navigsearch" target="1.8" />
       <module name="sonata-buddy" target="1.5" />

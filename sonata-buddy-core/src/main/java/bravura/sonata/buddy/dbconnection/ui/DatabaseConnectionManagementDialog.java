@@ -3,9 +3,7 @@ package bravura.sonata.buddy.dbconnection.ui;
 import bravura.sonata.buddy.dbconnection.DatabaseConnections;
 
 import javax.swing.*;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Frame;
+import java.awt.*;
 
 /**
  * Created by tszymanski on 18/09/2015.
@@ -31,10 +29,17 @@ class DatabaseConnectionManagementDialog extends JDialog implements DialogButton
         setContentPane(content);
 
         pack();
+
+        initialize();
+    }
+
+    private void initialize() {
+        connectionListPanel.selectDefaultConnection(connections);
     }
 
     private JPanel createLeft(DatabaseConnections connections) {
         connectionListPanel = new ConnectionListPanel(connections);
+        connectionListPanel.setConnectionListListener(this);
         return connectionListPanel;
     }
 
@@ -57,7 +62,12 @@ class DatabaseConnectionManagementDialog extends JDialog implements DialogButton
     }
 
     @Override
-    public void connectionSelected(ConnectionListPanel.ConnectionModel connection) {
+    public void connectionSelected(ConnectionModel connection) {
         connectionDetailsPanel.populate(connection);
+    }
+
+    @Override
+    public void connectionDeselected() {
+        connectionDetailsPanel.clear();
     }
 }
