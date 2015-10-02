@@ -53,7 +53,9 @@ class DatabaseConnectionManagementDialog extends JDialog implements DialogButton
 
     @Override
     public void onSave() {
-
+        if (connectionListPanel.validateConnections()) {
+            System.out.prinln("Saving");
+        }
     }
 
     @Override

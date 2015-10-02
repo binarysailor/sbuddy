@@ -6,7 +6,10 @@ import bravura.sonata.buddy.dbconnection.DatabaseConnections;
 import javax.swing.*;
 import java.awt.*;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Enumeration;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  * Created by tszymanski on 19/09/2015.
@@ -82,6 +85,10 @@ class ConnectionListPanel extends JPanel {
         }
     }
 
+    public boolean validateConnections() {
+        connectionModelsAsStream().forEach(cm -> {});
+    }
+
     private ConnectionModel findConnectionModel(DatabaseConnection current) {
         Enumeration<ConnectionModel> elements = connectionListModel.elements();
         while (elements.hasMoreElements()) {
@@ -91,6 +98,10 @@ class ConnectionListPanel extends JPanel {
             }
         }
         return null;
+    }
+
+    private Stream<ConnectionModel> connectionModelsAsStream() {
+        return Collections.list(connectionListModel.elements()).stream();
     }
 
     private void onConnectionDeselected() {
