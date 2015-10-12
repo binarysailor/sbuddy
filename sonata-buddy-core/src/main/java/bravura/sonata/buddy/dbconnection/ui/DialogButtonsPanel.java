@@ -25,7 +25,7 @@ class DialogButtonsPanel extends JPanel {
         add(cancelButton);
 
         JButton saveButton = new JButton(("Save"));
-        cancelButton.addActionListener(e -> {
+        saveButton.addActionListener(e -> {
             listener.onSave();
         });
         add(saveButton);

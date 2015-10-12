@@ -25,6 +25,7 @@ public class MainWindow extends JFrame {
 
     MainWindow(ApplicationContext appContext) {
         super("Sonata Buddy");
+
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         boolean preferencesLoaded = Preferences.load();

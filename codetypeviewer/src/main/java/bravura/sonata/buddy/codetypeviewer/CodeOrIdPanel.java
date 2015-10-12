@@ -1,17 +1,17 @@
 package bravura.sonata.buddy.codetypeviewer;
 
+import bravura.sonata.buddy.config.Preferences;
 import bravura.sonata.buddy.delayedsearch.SearchCriteriaProducer;
 import bravura.sonata.buddy.delayedsearch.SearchEngine;
 import bravura.sonata.buddy.delayedsearch.SearchTextListener;
-import bravura.sonata.buddy.config.Preferences;
+import bravura.sonata.buddy.ui.ComponentDefaults;
+import bravura.sonata.buddy.ui.ComponentFactory;
 import org.springframework.util.StringUtils;
 
 import javax.swing.*;
 import javax.swing.text.AbstractDocument;
 import javax.swing.text.DocumentFilter;
-import java.awt.Dimension;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
+import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Optional;
@@ -105,8 +105,8 @@ class CodeOrIdPanel extends JPanel {
     }
 
     private JTextField createTextFieldWithFilter(DocumentFilter filter, JRadioButton relatedRadio) {
-        JTextField textField = new JTextField();
-        textField.setPreferredSize(new Dimension(80, 24));
+
+        JTextField textField = ComponentFactory.createDefaultTextField(ComponentDefaults.TextFieldSize.MEDIUM);
         AbstractDocument doc = (AbstractDocument) textField.getDocument();
         doc.setDocumentFilter(filter);
         textField.addKeyListener(new KeyAdapter() {

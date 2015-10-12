@@ -31,4 +31,13 @@ class DatabaseConnectionDAOImpl implements DatabaseConnectionDAO {
         };
         */
     }
+
+    @Override
+    public void saveDatabaseConnections(DatabaseConnection[] connections) throws DatabaseConnectionConfigException {
+        try {
+            XmlDatabaseConnections.save(directory, connections);
+        } catch (IOException | JAXBException e) {
+            throw new DatabaseConnectionConfigException(e);
+        }
+    }
 }

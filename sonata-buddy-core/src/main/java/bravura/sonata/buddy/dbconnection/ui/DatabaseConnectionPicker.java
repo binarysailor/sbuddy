@@ -15,9 +15,11 @@ public class DatabaseConnectionPicker extends JPanel {
 
     private final JComboBox connectionDropdown;
     private final DatabaseConnections connections;
+    private final DbConnectionManagementDialogAssembler dialogAssembler;
 
-    public DatabaseConnectionPicker(DatabaseConnections connections) {
+    public DatabaseConnectionPicker(DatabaseConnections connections, DbConnectionManagementDialogAssembler assembler) {
         this.connections = connections;
+        this.dialogAssembler = assembler;
 
         LayoutManager layout = new BoxLayout(this, BoxLayout.X_AXIS);
         setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
@@ -39,7 +41,7 @@ public class DatabaseConnectionPicker extends JPanel {
         addConnection.addActionListener(e ->  {
             SwingUtilities.invokeLater(() -> {
                 Frame frame = findFrame();
-                DatabaseConnectionManagementDialog databaseConnectionManagementDialog = new DatabaseConnectionManagementDialog(frame, connections);
+                DatabaseConnectionManagementDialog databaseConnectionManagementDialog = assembler.createDbConnectionManagementDialog(frame);
                 WindowPosition.centerRelativeTo(databaseConnectionManagementDialog, frame);
                 databaseConnectionManagementDialog.setVisible(true);
             });

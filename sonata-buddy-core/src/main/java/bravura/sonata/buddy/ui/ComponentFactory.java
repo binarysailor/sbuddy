@@ -9,6 +9,7 @@ public class ComponentFactory {
     public static JTextField createDefaultTextField(ComponentDefaults.TextFieldSize size) {
         JTextField field = new JTextField();
         field.setPreferredSize(size.getDimension());
+        field.setMinimumSize(size.getDimension());
 
         return field;
     }

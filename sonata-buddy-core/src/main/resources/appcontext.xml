@@ -23,6 +23,7 @@
           class="bravura.sonata.buddy.dbconnection.ui.DatabaseConnectionPicker"
           scope="prototype">
         <constructor-arg ref="dbConnections"/>
+        <constructor-arg ref="connectionMgmtDialogAssembler"/>
     </bean>
 
     <!-- Database connections -->
@@ -51,5 +52,13 @@
 
     <bean id="dao.codesAndTypes" class="bravura.sonata.buddy.codetypeviewer.CodesAndTypesDAOImpl" scope="singleton">
         <constructor-arg ref="dbConnections"/>
+    </bean>
+
+    <!-- other beans -->
+    <bean id="connectionValidator" class="bravura.sonata.buddy.dbconnection.ConnectionValidatorImpl" scope="singleton" />
+    <bean id="connectionMgmtDialogAssembler" class="bravura.sonata.buddy.dbconnection.ui.DbConnectionManagementDialogAssemblerImpl" scope="singleton">
+        <constructor-arg ref="dbConnectionDAO" />
+        <constructor-arg ref="dbConnections" />
+        <constructor-arg ref="connectionValidator" />
     </bean>
 </beans>

@@ -8,4 +8,5 @@ import bravura.sonata.buddy.dbconnection.DatabaseConnectionConfigException;
  */
 public interface DatabaseConnectionDAO {
     DatabaseConnection[] getDatabaseConnections() throws DatabaseConnectionConfigException;
+    void saveDatabaseConnections(DatabaseConnection[] connections) throws DatabaseConnectionConfigException;
 }

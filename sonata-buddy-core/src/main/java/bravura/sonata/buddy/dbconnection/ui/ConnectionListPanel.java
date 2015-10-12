@@ -1,15 +1,14 @@
 package bravura.sonata.buddy.dbconnection.ui;
 
+import bravura.sonata.buddy.dbconnection.ConnectionValidator;
 import bravura.sonata.buddy.dbconnection.DatabaseConnection;
 import bravura.sonata.buddy.dbconnection.DatabaseConnections;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Enumeration;
+import java.util.*;
+import java.util.List;
 import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
 
 /**
  * Created by tszymanski on 19/09/2015.
@@ -27,9 +26,11 @@ class ConnectionListPanel extends JPanel {
     private ConnectionListListener listener;
     private JButton addButton;
     private JButton deleteButton;
+    private ConnectionValidator connectionValidator;
 
-    ConnectionListPanel(DatabaseConnections connections) {
+    ConnectionListPanel(DatabaseConnections connections, ConnectionValidator connectionValidator) {
         this.connections = connections;
+        this.connectionValidator = connectionValidator;
 
         setLayout(new GridBagLayout());
 
@@ -69,7 +70,7 @@ class ConnectionListPanel extends JPanel {
         buildUi();
     }
 
-    public void selectDefaultConnection(DatabaseConnections connections) {
+    public void selectDefaultConnection() {
         DatabaseConnection current = connections.getCurrent();
         ConnectionModel connectionModel;
         if (current == null) {
@@ -87,6 +88,7 @@ class ConnectionListPanel extends JPanel {
 
     public boolean validateConnections() {
         connectionModelsAsStream().forEach(cm -> {});
+        return true;
     }
 
     private ConnectionModel findConnectionModel(DatabaseConnection current) {
@@ -137,5 +139,13 @@ class ConnectionListPanel extends JPanel {
 
     void setConnectionListListener(ConnectionListListener listener) {
         this.listener = listener;
+    }
+
+    public ConnectionModel[] getConnections() {
+        List<ConnectionModel> modelsAsList = new ArrayList<>();
+        for (Object e : connectionListModel.toArray()) {
+            modelsAsList.add((ConnectionModel)e);
+        }
+        return modelsAsList.toArray(new ConnectionModel[0]);
     }
 }

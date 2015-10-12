@@ -21,6 +21,10 @@ class ConnectionModel {
         this.password = connection.getPassword();
     }
 
+    public DatabaseConnection toConnection() {
+        return new DatabaseConnection(name, url, user, password);
+    }
+
     public String getName() {
         return name;
     }

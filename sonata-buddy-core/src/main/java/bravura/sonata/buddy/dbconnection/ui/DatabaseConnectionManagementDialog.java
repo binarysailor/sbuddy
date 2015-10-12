@@ -1,6 +1,8 @@
 package bravura.sonata.buddy.dbconnection.ui;
 
-import bravura.sonata.buddy.dbconnection.DatabaseConnections;
+import bravura.sonata.buddy.dbconnection.DatabaseConnection;
+import bravura.sonata.buddy.dbconnection.DatabaseConnectionConfigException;
+import bravura.sonata.buddy.dbconnection.dao.DatabaseConnectionDAO;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,23 +10,24 @@ import java.awt.*;
 /**
  * Created by tszymanski on 18/09/2015.
  */
-class DatabaseConnectionManagementDialog extends JDialog implements DialogButtonsPanel.DialogButtonsListener, ConnectionListPanel.ConnectionListListener {
+public class DatabaseConnectionManagementDialog extends JDialog implements DialogButtonsPanel.DialogButtonsListener, ConnectionListPanel.ConnectionListListener {
 
-    private DatabaseConnections connections;
+    private DatabaseConnectionDAO connectionDao;
     private ConnectionListPanel connectionListPanel;
     private ConnectionDetailsPanel connectionDetailsPanel;
 
-    public DatabaseConnectionManagementDialog(Frame owner, DatabaseConnections connections) {
+    DatabaseConnectionManagementDialog(Frame owner, ConnectionListPanel listPanel, ConnectionDetailsPanel detailsPanel, DatabaseConnectionDAO connectionDao) {
         super(owner, "Database connection management", true);
-        this.connections = connections;
+        this.connectionDao = connectionDao;
 
         setPreferredSize(new Dimension(480, 300));
         setResizable(false);
 
-        JPanel left = createLeft(connections);
-        JPanel right = createRight();
+        listPanel.setConnectionListListener(this);
+        this.connectionListPanel = listPanel;
+        this.connectionDetailsPanel = detailsPanel;
 
-        JSplitPane content = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, left, right);
+        JSplitPane content = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, createLeft(), createRight());
         content.setDividerLocation(0.3);
         setContentPane(content);
 
@@ -34,18 +37,15 @@ class DatabaseConnectionManagementDialog extends JDialog implements DialogButton
     }
 
     private void initialize() {
-        connectionListPanel.selectDefaultConnection(connections);
+        connectionListPanel.selectDefaultConnection();
     }
 
-    private JPanel createLeft(DatabaseConnections connections) {
-        connectionListPanel = new ConnectionListPanel(connections);
-        connectionListPanel.setConnectionListListener(this);
+    private JPanel createLeft() {
         return connectionListPanel;
     }
 
     private JPanel createRight() {
         JPanel rightPanel = new JPanel(new BorderLayout());
-        connectionDetailsPanel = new ConnectionDetailsPanel();
         rightPanel.add(connectionDetailsPanel, BorderLayout.NORTH);
         rightPanel.add(new DialogButtonsPanel(this), BorderLayout.SOUTH);
         return rightPanel;
@@ -54,8 +54,25 @@ class DatabaseConnectionManagementDialog extends JDialog implements DialogButton
     @Override
     public void onSave() {
         if (connectionListPanel.validateConnections()) {
-            System.out.prinln("Saving");
+            DatabaseConnection[] connections = buildDatabaseConnections();
+
+            try {
+                connectionDao.saveDatabaseConnections(connections);
+            } catch (DatabaseConnectionConfigException e) {
+                e.printStackTrace();
+            }
         }
+    }
+
+    private DatabaseConnection[] buildDatabaseConnections() {
+        ConnectionModel[] connectionModels = connectionListPanel.getConnections();
+        DatabaseConnection[] connections = new DatabaseConnection[connectionModels.length];
+
+        for (int i = 0; i < connectionModels.length; i++) {
+            connections[i] = connectionModels[i].toConnection();
+        }
+
+        return connections;
     }
 
     @Override
