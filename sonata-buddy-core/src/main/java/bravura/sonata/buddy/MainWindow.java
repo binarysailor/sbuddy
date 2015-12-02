@@ -52,6 +52,8 @@ public class MainWindow extends JFrame {
 
         DatabaseConnections dbConnections = appContext.getBean(DatabaseConnections.class);
         addWindowListener(new ConnectionClosingWindowListener(dbConnections));
+
+        ErrorReporter.setMainFrame(this);
     }
 
     private void addModuleTabs(ApplicationContext appContext) {

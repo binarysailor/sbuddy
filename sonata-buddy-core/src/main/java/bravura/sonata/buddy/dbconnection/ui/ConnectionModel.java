@@ -6,15 +6,18 @@ import bravura.sonata.buddy.dbconnection.DatabaseConnection;
  * Created by tszymanski on 24/09/2015.
  */
 class ConnectionModel {
+    private DatabaseConnection.ID id;
     private String name = "";
     private String url = "";
     private String user = "";
     private String password = "";
 
     public ConnectionModel() {
+        id = DatabaseConnection.ID.newInstance();
     }
 
     public ConnectionModel(DatabaseConnection connection) {
+        this.id = connection.getId();
         this.name = connection.getName();
         this.url = connection.getUrl();
         this.user = connection.getUser();
@@ -22,7 +25,7 @@ class ConnectionModel {
     }
 
     public DatabaseConnection toConnection() {
-        return new DatabaseConnection(name, url, user, password);
+        return new DatabaseConnection(id, name, url, user, password);
     }
 
     public String getName() {

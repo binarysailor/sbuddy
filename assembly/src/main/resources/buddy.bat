@@ -1,0 +1,1 @@
+java -jar lib/sonata-buddy-launcher.jar

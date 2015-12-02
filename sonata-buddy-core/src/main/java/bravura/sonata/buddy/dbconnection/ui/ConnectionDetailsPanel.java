@@ -5,11 +5,24 @@ import bravura.sonata.buddy.ui.ComponentFactory;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 
 /**
  * Created by tszymanski on 23/09/2015.
  */
 class ConnectionDetailsPanel extends JPanel {
+
+    private final FocusListener FIELD_FOCUS_LISTENER = new FocusListener() {
+        @Override
+        public void focusGained(FocusEvent e) {
+        }
+
+        @Override
+        public void focusLost(FocusEvent e) {
+            saveFieldsToCurrentConnection();
+        }
+    };
 
     private JTextField nameField;
     private JTextField urlField;
@@ -20,10 +33,10 @@ class ConnectionDetailsPanel extends JPanel {
 
     ConnectionDetailsPanel() {
 
-        nameField = ComponentFactory.createDefaultTextField(ComponentDefaults.TextFieldSize.LARGE);
-        urlField = ComponentFactory.createDefaultTextField(ComponentDefaults.TextFieldSize.LARGE);
-        userField = ComponentFactory.createDefaultTextField(ComponentDefaults.TextFieldSize.MEDIUM);
-        passwordField = ComponentFactory.createDefaultTextField(ComponentDefaults.TextFieldSize.MEDIUM);
+        nameField = createFieldWithFocusListener(ComponentDefaults.TextFieldSize.LARGE);
+        urlField = createFieldWithFocusListener(ComponentDefaults.TextFieldSize.LARGE);
+        userField = createFieldWithFocusListener(ComponentDefaults.TextFieldSize.MEDIUM);
+        passwordField = createFieldWithFocusListener(ComponentDefaults.TextFieldSize.MEDIUM);
 
         buildUi();
 
@@ -38,6 +51,12 @@ class ConnectionDetailsPanel extends JPanel {
     public void clear() {
         saveFieldsToCurrentConnection();
         setCurrentConnection(null);
+    }
+
+    private JTextField createFieldWithFocusListener(ComponentDefaults.TextFieldSize fieldSize) {
+        JTextField field = ComponentFactory.createDefaultTextField(fieldSize);
+        field.addFocusListener(FIELD_FOCUS_LISTENER);
+        return field;
     }
 
     private void setCurrentConnection(ConnectionModel currentConnection) {

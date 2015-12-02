@@ -1,13 +1,15 @@
 package bravura.sonata.buddy.dbconnection;
 
+import bravura.sonata.buddy.ErrorReporter;
 import bravura.sonata.buddy.dbconnection.dao.DatabaseConnectionDAO;
+import org.springframework.context.ApplicationListener;
 
 import javax.sql.DataSource;
 
 /**
  * Created by tszymanski on 23/06/2015.
  */
-public class DatabaseConnections {
+public class DatabaseConnections implements ApplicationListener<DatabaseConnectionConfigChangedEvent> {
     private DatabaseConnectionDAO dao;
     private DatabaseConnection[] connections;
     private DatabaseConnection current;
@@ -23,6 +25,28 @@ public class DatabaseConnections {
         }
     }
 
+    public boolean reinitialize() throws DatabaseConnectionConfigException {
+        DatabaseConnection[] newConnections = loadDatabaseConnections();
+        boolean currentChanged = false;
+        if (current != null) {
+            DatabaseConnection currentConnectionLookAlike = null;
+            for (DatabaseConnection connection : newConnections) {
+                if (connection.isSameAs(current)) {
+                    currentConnectionLookAlike = connection;
+                }
+            }
+            if (currentConnectionLookAlike != null) {
+                current = currentConnectionLookAlike;
+            } else {
+                current = DatabaseConnection.empty();
+                currentChanged = true;
+            }
+        }
+        this.connections = newConnections;
+
+        return currentChanged;
+    }
+
     public DatabaseConnection[] all() {
         return connections;
     }
@@ -36,14 +60,22 @@ public class DatabaseConnections {
     }
 
     public void setCurrent(DatabaseConnection connection) {
-        for (DatabaseConnection registeredConnection : connections) {
-            if (registeredConnection.equals(connection)) {
-                current = registeredConnection;
-                return;
+        DatabaseConnection connectionToSet = null;
+        if (connection.isEmpty()) {
+            connectionToSet = connection;
+        } else {
+            for (DatabaseConnection registeredConnection : connections) {
+                if (registeredConnection.equals(connection)) {
+                    connectionToSet = registeredConnection;
+                }
             }
         }
 
-        throw new IllegalArgumentException("The connection you're trying to select is unknown");
+        if (connectionToSet != null) {
+            current = connectionToSet;
+        } else {
+            throw new IllegalArgumentException("The connection you're trying to select is unknown");
+        }
     }
 
     private DatabaseConnection[] loadDatabaseConnections() throws DatabaseConnectionConfigException {
@@ -53,6 +85,15 @@ public class DatabaseConnections {
     public void closeAll() {
         for (DatabaseConnection connection : connections) {
             connection.closeDataSource();
+        }
+    }
+
+    @Override
+    public void onApplicationEvent(DatabaseConnectionConfigChangedEvent databaseConnectionConfigChangedEvent) {
+        try {
+            this.reinitialize();
+        } catch (DatabaseConnectionConfigException e) {
+            ErrorReporter.report(e);
         }
     }
 }

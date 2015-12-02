@@ -30,11 +30,14 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="codetypeviewer" />
+        <module name="launcher" />
         <module name="navigsearch" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="assembly" target="1.5" />
       <module name="codetypeviewer" target="1.8" />
+      <module name="launcher" target="1.8" />
       <module name="navigsearch" target="1.8" />
       <module name="sonata-buddy" target="1.5" />
       <module name="sonata-buddy-core" target="1.8" />

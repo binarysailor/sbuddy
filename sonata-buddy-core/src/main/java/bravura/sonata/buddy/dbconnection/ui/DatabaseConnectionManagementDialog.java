@@ -1,8 +1,12 @@
 package bravura.sonata.buddy.dbconnection.ui;
 
+import bravura.sonata.buddy.ErrorReporter;
 import bravura.sonata.buddy.dbconnection.DatabaseConnection;
+import bravura.sonata.buddy.dbconnection.DatabaseConnectionConfigChangedEvent;
 import bravura.sonata.buddy.dbconnection.DatabaseConnectionConfigException;
 import bravura.sonata.buddy.dbconnection.dao.DatabaseConnectionDAO;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.context.ApplicationEventPublisherAware;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,11 +14,12 @@ import java.awt.*;
 /**
  * Created by tszymanski on 18/09/2015.
  */
-public class DatabaseConnectionManagementDialog extends JDialog implements DialogButtonsPanel.DialogButtonsListener, ConnectionListPanel.ConnectionListListener {
+public class DatabaseConnectionManagementDialog extends JDialog implements DialogButtonsPanel.DialogButtonsListener, ConnectionListPanel.ConnectionListListener, ApplicationEventPublisherAware {
 
     private DatabaseConnectionDAO connectionDao;
     private ConnectionListPanel connectionListPanel;
     private ConnectionDetailsPanel connectionDetailsPanel;
+    private ApplicationEventPublisher eventPublisher;
 
     DatabaseConnectionManagementDialog(Frame owner, ConnectionListPanel listPanel, ConnectionDetailsPanel detailsPanel, DatabaseConnectionDAO connectionDao) {
         super(owner, "Database connection management", true);
@@ -58,10 +63,17 @@ public class DatabaseConnectionManagementDialog extends JDialog implements Dialo
 
             try {
                 connectionDao.saveDatabaseConnections(connections);
+                eventPublisher.publishEvent(new DatabaseConnectionConfigChangedEvent(this));
+                closeDialog();
             } catch (DatabaseConnectionConfigException e) {
-                e.printStackTrace();
+                ErrorReporter.report(e);
             }
         }
+    }
+
+    @Override
+    public void setApplicationEventPublisher(ApplicationEventPublisher applicationEventPublisher) {
+        this.eventPublisher = applicationEventPublisher;
     }
 
     private DatabaseConnection[] buildDatabaseConnections() {
@@ -77,7 +89,11 @@ public class DatabaseConnectionManagementDialog extends JDialog implements Dialo
 
     @Override
     public void onCancel() {
-        setVisible(false);
+        closeDialog();
+    }
+
+    private void closeDialog() {
+        dispose();
     }
 
     @Override
