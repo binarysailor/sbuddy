@@ -3,12 +3,12 @@ package bravura.sonata.buddy.codetypeviewer;
 import bravura.sonata.buddy.codetypeviewer.datamodel.Code;
 import bravura.sonata.buddy.codetypeviewer.datamodel.CodeType;
 import org.springframework.jdbc.core.RowCallbackHandler;
-import org.springframework.util.ObjectUtils;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Created by tszymanski on 25/06/2015.
@@ -25,7 +25,7 @@ class CodeTypeRowCallbackHandler implements RowCallbackHandler {
     @Override
     public void processRow(ResultSet resultSet) throws SQLException {
         String codeTypeCode = resultSet.getString("CDTY_CODE");
-        if (!ObjectUtils.nullSafeEquals(codeTypeCode, currentCodeTypeCode)) {
+        if (!Objects.equals(codeTypeCode, currentCodeTypeCode)) {
             addCurrentCodeType();
             currentCodeTypeId = resultSet.getLong("CDTY_ID");
             currentCodeTypeCode = codeTypeCode;

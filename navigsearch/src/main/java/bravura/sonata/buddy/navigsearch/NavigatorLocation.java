@@ -1,9 +1,12 @@
 package bravura.sonata.buddy.navigsearch;
 
-import org.springframework.util.StringUtils;
-
-import java.util.*;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.stream.Collectors;
+
+import static java.lang.Character.isAlphabetic;
+import static java.lang.Character.isUpperCase;
+
 
 public class NavigatorLocation {
     private final Deque<String> path = new LinkedList<>(); // starts with top level option, ends with the searched option
@@ -19,13 +22,13 @@ public class NavigatorLocation {
     public boolean isClassicMenu() {
         // purely heuristic! to be investigated for a real solution
         String topLevel = path.getFirst();
-        return !isUpperCase(topLevel);
+        return !isStringUpperCase(topLevel);
     }
 
-    private boolean isUpperCase(String topLevel) {
+    private boolean isStringUpperCase(String topLevel) {
         char[] topLevelChars = topLevel.toCharArray();
         for (char c : topLevelChars) {
-            if (Character.isAlphabetic(c) && !Character.isUpperCase(c)) {
+            if (isAlphabetic(c) && !isUpperCase(c)) {
                 return false;
             }
         }

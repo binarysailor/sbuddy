@@ -1,10 +1,11 @@
 package bravura.sonata.buddy.dbconnection;
 
+import bravura.sonata.buddy.ErrorReporter;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
-import org.springframework.util.ObjectUtils;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
+import java.util.Objects;
 import java.util.logging.Logger;
 
 public class DatabaseConnection {
@@ -116,7 +117,7 @@ public class DatabaseConnection {
         try {
             ds.setDriverClass("oracle.jdbc.OracleDriver");
         } catch (PropertyVetoException e) {
-            e.printStackTrace();
+            ErrorReporter.report(e);
         }
         ds.setJdbcUrl(url);
         ds.setUser(user);
@@ -133,9 +134,9 @@ public class DatabaseConnection {
     }
 
     public boolean isSameAs(DatabaseConnection other) {
-        return ObjectUtils.nullSafeEquals(this.name, other.name)
-                && ObjectUtils.nullSafeEquals(this.url, other.url)
-                && ObjectUtils.nullSafeEquals(this.user, other.user)
-                && ObjectUtils.nullSafeEquals(this.password, other.password);
+        return Objects.equals(this.name, other.name)
+                && Objects.equals(this.url, other.url)
+                && Objects.equals(this.user, other.user)
+                && Objects.equals(this.password, other.password);
     }
 }

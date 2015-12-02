@@ -31,7 +31,6 @@ class NavigatorDAOImpl implements NavigatorDAO {
     }
 
     private Collection<NavigatorLocation> filterLocations(Collection<NavigatorLocation> navigatorLocations) {
-        return navigatorLocations.stream().filter(location -> { return location.isClassicMenu(); })
-                .collect(Collectors.toList());
+        return navigatorLocations.stream().filter(NavigatorLocation::isClassicMenu).collect(Collectors.toList());
     }
 }

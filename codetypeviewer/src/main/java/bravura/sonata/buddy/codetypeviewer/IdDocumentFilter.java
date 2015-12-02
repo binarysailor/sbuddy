@@ -4,6 +4,8 @@ import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.DocumentFilter;
 
+import static java.lang.Character.isDigit;
+
 /**
  * Created by tszymanski on 24/06/2015.
  */
@@ -28,7 +30,7 @@ class IdDocumentFilter extends DocumentFilter {
     private boolean isNumeric(String text) {
         char[] chars = text.toCharArray();
         for (char c : chars) {
-            if (!Character.isDigit(c)) {
+            if (!isDigit(c)) {
                 return false;
             }
         }
